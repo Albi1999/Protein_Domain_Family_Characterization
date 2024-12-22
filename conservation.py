@@ -3,7 +3,11 @@ from collections import Counter
 import pandas as pd
 from scipy.stats import entropy
 import math
-
+from Bio.Align import MultipleSeqAlignment
+from Bio.SeqRecord import SeqRecord
+from Bio.Seq import Seq
+from Bio import SeqIO
+import sys
 
 class ConservationAnalyzer:
     def __init__(self, alignment_file):
@@ -90,8 +94,43 @@ class ConservationAnalyzer:
             return 0
             
         return max(group_counts.values()) / sum(group_counts.values())
+
+
+
+    """
+    def find_similar_sequences(self, similarity_threshold):
+        # TODO : I think using JalView for this is better : JalView --> Edit --> Remove Redundancy 
+        similar_pairs = []
+        
+        for i in range(len(self.alignment)):
+            for j in range(i + 1, len(self.alignment)):
+                seq1 = str(self.alignment[i].seq)
+                seq2 = str(self.alignment[j].seq)
+                
+                # Calculate similarity (ignoring gaps)
+                matches = sum(a == b for a, b in zip(seq1, seq2) if a != '-' and b != '-')
+                total = sum(1 for a, b in zip(seq1, seq2) if a != '-' and b != '-')
+                
+                if total > 0:
+                    similarity = matches / total
+                    if similarity >= similarity_threshold:
+                        similar_pairs.append((
+                            self.alignment[i].id,
+                            self.alignment[j].id,
+                            similarity
+                        ))
     
-    def analyze_columns(self, gap_threshold=0.5, conservation_threshold=0.5):
+        return similar_pairs
+
+
+    def analyze_rows(self, similarity_threshold = 0.95):
+        similar_pairs = self.find_similar_sequences(similarity_threshold)
+        print(f"We have {len(similar_pairs)} many pairs with {similarity_threshold} or more identity (excluding gaps) of a total of {self.num_sequences} sequences")
+    """
+
+    # TODO : I took very strict values now such that the number of residues per sequence is below 100 (right now we have length 77) ; the PSSM creation with 
+    # much higher length did not work, but maybe we should write an email and ask ; nevertheless, we can first try some evaluation based on that PSSM and see our scores
+    def analyze_columns(self, gap_threshold=0.37, conservation_threshold=0.9):
         """
         Analyze all columns and return comprehensive metrics
         Returns DataFrame with various conservation metrics for each position
@@ -107,55 +146,87 @@ class ConservationAnalyzer:
             data.append({
                 'position': i + 1,
                 'gap_frequency': gap_freq,
-                'conservation_score': cons_score,
+                'single_conservation': cons_score,
                 'entropy': info_content,
                 'group_conservation': group_cons,
                 # Here we should look possibly for better ideas
+                # Check gap frequency not too high (i.e. not nearly all elements in the columns gaps (-))
+                # Check that the group conservation is high enough (i.e. the amino acids are not too different
+                # ; right now we do with groups and not single amino acid sequence since I'd say the groups
+                # are more representative (if we do single amino acids, we'd delete more stuff))
                 'suggested_remove': (gap_freq > gap_threshold or       
                                    group_cons < conservation_threshold)
             })
         
         return pd.DataFrame(data)
+
+
+def remove_columns_from_alignment(input_file, output_file, columns_to_remove, format="fasta"):
+    """
+    Remove specified columns from a multiple sequence alignment and save to new file
     
+    Args:
+        input_file (str): Path to input alignment file
+        output_file (str): Path where to save trimmed alignment
+        columns_to_remove (list): List of column indices to remove (0-based)
+        format (str): File format (default: "fasta")
     """
-    def suggest_columns_to_remove(self, gap_threshold=0.5, 
-                                conservation_threshold=0.3,
-                                information_threshold=0.5):
-      
-        to_remove = []
+    # Read the alignment
+    alignment = AlignIO.read(input_file, format)
+    
+    # Sort columns to remove in descending order
+    # (so removing them doesn't affect the indices of remaining columns)
+    columns_to_remove = sorted(columns_to_remove, reverse=True)
+    
+    # Create new alignment records
+    new_records = []
+    
+    # Process each sequence
+    for record in alignment:
+        # Convert sequence to list for easier manipulation
+        seq_list = list(record.seq)
         
-        for i in range(self.alignment_length):
-            gap_freq = self.calculate_gap_frequency(i)
-            cons_score = self.calculate_conservation_score(i)
-            info_content = self.calculate_entropy(i)
-            
-            # Suggest removal if:
-            # 1. Too many gaps OR
-            # 2. Low conservation AND low information content
-            if (gap_freq > gap_threshold or 
-                (cons_score < conservation_threshold and 
-                 info_content < information_threshold)):
-                to_remove.append(i)
-                
-        return to_remove
-    """
+        # Remove specified columns
+        for col in columns_to_remove:
+            del seq_list[col]
+        
+        # Create new sequence record
+        new_seq = Seq(''.join(seq_list)) # Join the list element to a string again (i.e. after removal of amino acids out of sequence represented as list, turn into one string again) and turn into Seq object
+        new_record = SeqRecord(new_seq,
+                            id=record.id,
+                            name=record.name,
+                            description=record.description)
+        new_records.append(new_record)
+    
+    # Create new alignment
+    # TODO : Maybe we have to add some variables here (i.e. how to do the MSA)!
+    new_alignment = MultipleSeqAlignment(new_records)
+    
+    # Write to file
+    AlignIO.write(new_alignment, output_file, format)
+    
+    return new_alignment
+
+
+
+
+    
+
 
 # Example usage:
 if __name__ == "__main__":
     # Initialize analyzer 
-    analyzer = ConservationAnalyzer("clustalo-I20241221-155509-0013-19108079-p1m.fasta")
+    analyzer = ConservationAnalyzer("clustal_rows_removed_100threshold.fa")
     
     # Get comprehensive analysis
     analysis = analyzer.analyze_columns()
+   # analysis_2 = analyzer.analyze_rows()
     
     # Print summary statistics
     print("\nAlignment Summary:")
     print(f"Number of sequences: {analyzer.num_sequences}")
     print(f"Alignment length: {analyzer.alignment_length}")
-    
-    # Get suggested columns to remove
-  #  to_remove = analyzer.suggest_columns_to_remove()
-  #  print(f"\nSuggested columns to remove: {len(to_remove)}")
+
 
     # Print number of True/False
     counts = analysis['suggested_remove'].value_counts()
@@ -163,11 +234,31 @@ if __name__ == "__main__":
     counts_true = counts[True]  # To be removed
     counts_false = counts[False] # To be kept
 
-    print(f"With the current removal tactic, we would remove {(counts_true / (counts_true + counts_false)):.2f} percent of columns")
+    print(f"With the current removal tactic, we would remove {(counts_true / (counts_true + counts_false)):.2f} percent of columns ; we keep {counts_false} of {counts_false + counts_true} columns")
     
 
-    
     # Save detailed analysis to CSV
     analysis.to_csv("conservation_analysis.csv", index=False)
 
-    # TODO : ADD REMOVAL LOGIC OF ROWS
+
+    # Get indices of columns marked for removal
+    columns_to_remove = analysis[analysis['suggested_remove']]['position'].values.tolist()
+    # Convert to 0-based indices (if positions were 1-based)
+    columns_to_remove = [x-1 for x in columns_to_remove]
+    
+    # Remove columns and save new alignment
+    new_alignment = remove_columns_from_alignment(
+        "clustal_rows_removed_100threshold.fa",
+        "trimmed_alignment.fasta",
+        columns_to_remove
+    )
+
+
+        
+
+
+    print(f"Original alignment length: {analyzer.alignment_length}")
+    print(f"Number of columns removed: {len(columns_to_remove)}")
+    print(f"New alignment length: {new_alignment.get_alignment_length()}")
+
+
