@@ -1,0 +1,83 @@
+Entry	Reviewed	Entry Name	Protein names	Gene Names	Organism	Length	Domain [FT]	Domain [CC]
+A2VBC4	reviewed	PA1_POLPI	Phospholipase A1 (PLA1) (EC 3.1.1.32) (allergen Poly p 1)		Polybia paulista (Neotropical social wasp) (Swarm-founding polistine wasp)	322		
+A5PK46	reviewed	LIPR2_BOVIN	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	PNLIPRP2	Bos taurus (Bovine)	469	DOMAIN 357..469; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+D7EZN2	reviewed	LIPR2_PIG	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	PNLIPRP2	Sus scrofa (Pig)	471	DOMAIN 359..471; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+O46559	reviewed	LIPC_RABIT	Hepatic triacylglycerol lipase (HL) (Hepatic lipase) (EC 3.1.1.3) (Lipase member C) (Lysophospholipase) (EC 3.1.1.5) (Phospholipase A1) (EC 3.1.1.32)	LIPC	Oryctolagus cuniculus (Rabbit)	499	DOMAIN 352..486; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+O46647	reviewed	LIPL_NEOVI	Lipoprotein lipase (LPL) (EC 3.1.1.34)	LPL	Neovison vison (American mink) (Mustela vison)	475	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+O88354	reviewed	LIPP_ICTTR	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3) (Heart pancreatic lipase) (PL-h)	PNLIP PTL	Ictidomys tridecemlineatus (Thirteen-lined ground squirrel) (Spermophilus tridecemlineatus)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P00591	reviewed	LIPP_PIG	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Sus scrofa (Pig)	450	DOMAIN 339..450; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P02843	reviewed	VIT1_DROME	Vitellogenin-1 (Vitellogenin I) (Yolk protein 1)	Yp1 CG2985	Drosophila melanogaster (Fruit fly)	439		
+P02844	reviewed	VIT2_DROME	Vitellogenin-2 (Vitellogenin II) (Yolk protein 2)	Yp2 CG2979	Drosophila melanogaster (Fruit fly)	442		
+P06607	reviewed	VIT3_DROME	Vitellogenin-3 (Vitellogenin III) (Yolk protein 3)	Yp3 CG11129	Drosophila melanogaster (Fruit fly)	420		
+P06857	reviewed	LIPR1_CANLF	Inactive pancreatic lipase-related protein 1 (PL-RP1)	PNLIPRP1 PLRP1	Canis lupus familiaris (Dog) (Canis familiaris)	467	DOMAIN 356..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P06858	reviewed	LIPL_HUMAN	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL LIPD	Homo sapiens (Human)	475	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P07867	reviewed	LIPC_RAT	Hepatic triacylglycerol lipase (HL) (Hepatic lipase) (EC 3.1.1.3) (Lipase member C) (Lysophospholipase) (EC 3.1.1.5) (Phospholipase A1) (EC 3.1.1.32)	Lipc	Rattus norvegicus (Rat)	494	DOMAIN 353..487; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P0DMB4	reviewed	PA11_VESAF	Phospholipase A1 1 (PLA1) (EC 3.1.1.32) (Allergen Ves a 1.01) (Vespapase) (allergen Vesp a 1)		Vespa affinis (Lesser banded hornet)	334		
+P0DMB5	reviewed	PA12_VESAF	Phospholipase A1 2 (PLA1) (EC 3.1.1.32) (Allergen Ves a 1.02) (Vespapase) (allergen Vesp a 1)		Vespa affinis (Lesser banded hornet)	334		
+P11150	reviewed	LIPC_HUMAN	Hepatic triacylglycerol lipase (HL) (Hepatic lipase) (EC 3.1.1.3) (Lipase member C) (Lysophospholipase) (EC 3.1.1.5) (Phospholipase A1) (EC 3.1.1.32)	LIPC HTGL	Homo sapiens (Human)	499	DOMAIN 352..486; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P11151	reviewed	LIPL_BOVIN	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Bos taurus (Bovine)	478	DOMAIN 344..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P11152	reviewed	LIPL_MOUSE	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	Lpl	Mus musculus (Mouse)	474	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P11153	reviewed	LIPL_CAVPO	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Cavia porcellus (Guinea pig)	465	DOMAIN 331..454; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P11602	reviewed	LIPL_CHICK	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Gallus gallus (Chicken)	490	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P16233	reviewed	LIPP_HUMAN	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Homo sapiens (Human)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P17892	reviewed	LIPR2_MOUSE	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	Pnliprp2 Plrp2	Mus musculus (Mouse)	482	DOMAIN 370..482; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P27656	reviewed	LIPC_MOUSE	Hepatic triacylglycerol lipase (HL) (Hepatic lipase) (EC 3.1.1.3) (Lipase member C) (Lysophospholipase) (EC 3.1.1.5) (Phospholipase A1) (EC 3.1.1.32)	Lipc Hpl	Mus musculus (Mouse)	510	DOMAIN 353..487; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P27657	reviewed	LIPP_RAT	Pancreatic triacylglycerol lipase (PL) (Pancreatic lipase) (EC 3.1.1.3)	Pnlip	Rattus norvegicus (Rat)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P29183	reviewed	LIPP_HORSE	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Equus caballus (Horse)	461	DOMAIN 351..461; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P49060	reviewed	LIPL_PAPAN	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Papio anubis (Olive baboon)	475	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P49923	reviewed	LIPL_PIG	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Sus scrofa (Pig)	478	DOMAIN 344..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P54315	reviewed	LIPR1_HUMAN	Inactive pancreatic lipase-related protein 1 (PL-RP1)	PNLIPRP1 PLRP1	Homo sapiens (Human)	467	DOMAIN 356..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P54317	reviewed	LIPR2_HUMAN	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	PNLIPRP2 PLRP2	Homo sapiens (Human)	469	DOMAIN 357..469; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P54318	reviewed	LIPR2_RAT	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Secretory glycoprotein GP-3) (Triacylglycerol lipase) (EC 3.1.1.3)	Pnliprp2 Plrp2	Rattus norvegicus (Rat)	468	DOMAIN 356..468; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P55031	reviewed	LIPL_FELCA	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Felis catus (Cat) (Felis silvestris catus)	478	DOMAIN 344..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P81139	reviewed	LIPR2_CAVPO	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (GPL) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	PNLIPRP2	Cavia porcellus (Guinea pig)	434	DOMAIN 322..434; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q06000	reviewed	LIPL_RAT	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	Lpl	Rattus norvegicus (Rat)	474	DOMAIN 341..464; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q29524	reviewed	LIPL_SHEEP	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (EC 3.1.1.32)	LPL	Ovis aries (Sheep)	478	DOMAIN 344..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q3SZ79	reviewed	LIPC_BOVIN	Hepatic triacylglycerol lipase (HL) (Hepatic lipase) (EC 3.1.1.3) (Lipase member C) (Lysophospholipase) (EC 3.1.1.5) (Phospholipase A1) (EC 3.1.1.32)	LIPC	Bos taurus (Bovine)	500	DOMAIN 353..487; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q53H76	reviewed	PLA1A_HUMAN	Phospholipase A1 member A (EC 3.1.1.111) (Phosphatidylserine-specific phospholipase A1) (PS-PLA1)	PLA1A NMD PSPLA1	Homo sapiens (Human)	456		
+Q64424	reviewed	LIPR2_MYOCO	Pancreatic lipase-related protein 2 (PL-RP2) (Cytotoxic T lymphocyte lipase) (Galactolipase) (EC 3.1.1.26) (Triacylglycerol lipase) (EC 3.1.1.3)	PNLIPRP2	Myocastor coypus (Coypu) (Nutria)	470	DOMAIN 358..470; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q6P8U6	reviewed	LIPP_MOUSE	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	Pnlip	Mus musculus (Mouse)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q6XZB0	reviewed	LIPI_HUMAN	Lipase member I (LIPI) (EC 3.1.1.-) (Cancer/testis antigen 17) (CT17) (LPD lipase) (Membrane-associated phosphatidic acid-selective phospholipase A1-beta) (mPA-PLA1 beta)	LIPI LPDL PRED5	Homo sapiens (Human)	460		
+Q8VBX1	reviewed	LIPG_RAT	Endothelial lipase (EC 3.1.1.3) (Endothelial-derived lipase) (EDL) (Phospholipase A1) (EC 3.1.1.32)	Lipg	Rattus norvegicus (Rat)	493	DOMAIN 349..484; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q8WWY8	reviewed	LIPH_HUMAN	Lipase member H (LIPH) (EC 3.1.1.-) (LPD lipase-related protein) (Membrane-associated phosphatidic acid-selective phospholipase A1-alpha) (mPA-PLA1 alpha) (Phospholipase A1 member B)	LIPH LPDLR MPAPLA1 PLA1B	Homo sapiens (Human)	451		
+Q9WVG5	reviewed	LIPG_MOUSE	Endothelial lipase (EC 3.1.1.3) (Endothelial cell-derived lipase) (EDL) (Phospholipase A1) (EC 3.1.1.32)	Lipg	Mus musculus (Mouse)	500	DOMAIN 347..482; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q9Y5X9	reviewed	LIPG_HUMAN	Endothelial lipase (EC 3.1.1.3) (Endothelial cell-derived lipase) (EDL) (EL) (Phospholipase A1) (EC 3.1.1.32)	LIPG UNQ387/PRO719	Homo sapiens (Human)	500	DOMAIN 347..482; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+A0A0M3KKW3	reviewed	PA1_VESBA	Phospholipase A1 (vPLA1) (EC 3.1.1.32)		Vespa basalis (Hornet)	300		
+J3RZ81	reviewed	LIPE_CROAD	Putative endothelial lipase (EC 3.1.1.3)		Crotalus adamanteus (Eastern diamondback rattlesnake)	497	DOMAIN 357..492; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P0DPT0	reviewed	VEST1_VESTR	Phospholipase A1 VesT1.02 (EC 3.1.1.32)		Vespa tropica (Greater banded hornet) (Sphex tropica)	301		
+P49369	reviewed	PA1_VESVU	Phospholipase A1 (PLA1) (EC 3.1.1.32) (Allergen Ves v I) (allergen Ves v 1)		Vespula vulgaris (Yellow jacket) (Wasp)	336		
+P50903	reviewed	LIPP_CAVPO	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Cavia porcellus (Guinea pig)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P54316	reviewed	LIPR1_RAT	Inactive pancreatic lipase-related protein 1 (PL-RP1)	Pnliprp1 Plrp1	Rattus norvegicus (Rat)	473	DOMAIN 356..470; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+P97535	reviewed	PLA1A_RAT	Phospholipase A1 member A (EC 3.1.1.111) (Phosphatidylserine-specific phospholipase A1) (PS-PLA1)	Pla1a Pspla1	Rattus norvegicus (Rat)	456		
+Q02157	reviewed	LIPP_RABIT	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Oryctolagus cuniculus (Rabbit)	465	DOMAIN 355..465; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q06478	reviewed	PA11_DOLMA	Phospholipase A1 1 (PLA1) (EC 3.1.1.32) (Allergen Dol m I) (allergen Dol m 1)		Dolichovespula maculata (Bald-faced hornet) (Vespula maculata)	317		
+Q5RBQ5	reviewed	PLA1A_PONAB	Phospholipase A1 member A (EC 3.1.1.111)	PLA1A	Pongo abelii (Sumatran orangutan) (Pongo pygmaeus abelii)	456		
+Q64425	reviewed	LIPP_MYOCO	Pancreatic triacylglycerol lipase (PL) (PTL) (Pancreatic lipase) (EC 3.1.1.3)	PNLIP	Myocastor coypus (Coypu) (Nutria)	457	DOMAIN 347..457; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q68KK0	reviewed	PA1_SOLIN	Phospholipase A1 (PLA1) (EC 3.1.1.32) (Allergen Sol i I) (Venom allergen 1) (Venom allergen I) (allergen Sol i 1)		Solenopsis invicta (Red imported fire ant) (Solenopsis wagneri)	346		
+Q8CIV3	reviewed	LIPH_MOUSE	Lipase member H (EC 3.1.1.-)	Liph	Mus musculus (Mouse)	451		
+Q8VI78	reviewed	PLA1A_MOUSE	Phospholipase A1 member A (EC 3.1.1.111) (Phosphatidylserine-specific phospholipase A1) (PS-PLA1)	Pla1a Pspla1	Mus musculus (Mouse)	456		
+C0HLL3	reviewed	PA1_VESVE	Phospholipase A1 (PLA1) (EC 3.1.1.32) (Vesp v 1)		Vespa velutina (Asian yellow-legged hornet)	304		
+P0CH47	reviewed	PA1_VESMG	Probable phospholipase A1 magnifin (PLA1) (EC 3.1.1.32)		Vespa magnifica (Hornet)	337		
+P0CH86	reviewed	PA1_VESSQ	Phospholipase A1 (PLA1) (EC 3.1.1.32) (allergen Ves s 1)		Vespula squamosa (Southern yellow jacket) (Wasp)	298		
+P0CH87	reviewed	PA1_VESCR	Phospholipase A1 (PLA1) (EC 3.1.1.32) (allergen Vesp c 1)		Vespa crabro (European hornet)	301		
+P0DSI2	reviewed	PA1_DINQU	Phospholipase A1 (PLA1) (EC 3.1.1.32) (Venom allergen 1)		Dinoponera quadriceps (South American ant)	379		
+P27587	reviewed	VIT2_CERCA	Vitellogenin-2 (Vitellogenin II) (Yolk protein 2)	VG2-delta	Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata)	422		
+P27878	reviewed	VIT1_CERCA	Vitellogenin-1 (Vitellogenin I) (Yolk protein 1)	VG1-GAMMA	Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata)	437		
+P51528	reviewed	PA1_VESMC	Phospholipase A1 (PLA1) (EC 3.1.1.32) (Allergen Ves m I) (allergen Ves m 1)		Vespula maculifrons (Eastern yellow jacket) (Wasp)	300		
+P53357	reviewed	PA12_DOLMA	Phospholipase A1 2 (PLA1 2) (EC 3.1.1.32) (Allergen Dol m 1) (allergen Dol m 1)		Dolichovespula maculata (Bald-faced hornet) (Vespula maculata)	303		
+Q17RR3	reviewed	LIPR3_HUMAN	Pancreatic lipase-related protein 3 (PL-RP3) (EC 3.1.1.3)	PNLIPRP3	Homo sapiens (Human)	467	DOMAIN 355..467; /note="PLAT"	
+Q32PY2	reviewed	LIPH_RAT	Lipase member H (EC 3.1.1.-)	Liph	Rattus norvegicus (Rat)	451		
+Q3ZU95	reviewed	PA1_VESGE	Phospholipase A1 (PLA1) (EC 3.1.1.32) (allergen Ves g 1)		Vespula germanica (German yellow jacket) (Paravespula germanica)	300		
+Q5BKQ4	reviewed	LIPR1_MOUSE	Inactive pancreatic lipase-related protein 1 (PL-RP1)	Pnliprp1	Mus musculus (Mouse)	473	DOMAIN 356..467; /note="PLAT"; /evidence="ECO:0000255|PROSITE-ProRule:PRU00152"	
+Q5E9H0	reviewed	PLA1A_BOVIN	Phospholipase A1 member A (EC 3.1.1.111)	PLA1A	Bos taurus (Bovine)	456		
+Q5XGE9	reviewed	LIPH_XENTR	Lipase member H (EC 3.1.1.-)	liph	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	460		
+Q641F6	reviewed	LIPHB_XENLA	Lipase member H-B (EC 3.1.1.-)	liph-b	Xenopus laevis (African clawed frog)	460		
+Q6DBU8	reviewed	LIPH_DANRE	Lipase member H (EC 3.1.1.-)	liph zgc:91985	Danio rerio (Zebrafish) (Brachydanio rerio)	454		
+Q6NYZ4	reviewed	PLA1A_DANRE	Phospholipase A1 member A (EC 3.1.1.-)	pla1a zgc:77160	Danio rerio (Zebrafish) (Brachydanio rerio)	456		
+Q6PA23	reviewed	LIPHA_XENLA	Lipase member H-A (EC 3.1.1.-)	liph-a	Xenopus laevis (African clawed frog)	460		
+Q6Q249	reviewed	PA14_POLDO	Phospholipase A1 4 (PLA1 4) (EC 3.1.1.32) (allergen Pol d 1)		Polistes dominula (European paper wasp) (Vespa dominula)	316		
+Q6Q250	reviewed	PA13_POLDO	Phospholipase A1 3 (PLA1 3) (EC 3.1.1.32) (allergen Pol d 1)		Polistes dominula (European paper wasp) (Vespa dominula)	316		
+Q6Q251	reviewed	PA12_POLDO	Phospholipase A1 2 (PLA1 2) (EC 3.1.1.32) (allergen Pol d 1)		Polistes dominula (European paper wasp) (Vespa dominula)	316		
+Q6Q252	reviewed	PA11_POLDO	Phospholipase A1 1 (PLA1 1) (EC 3.1.1.32) (allergen Pol d 1)		Polistes dominula (European paper wasp) (Vespa dominula)	337		
+Q9BDJ4	reviewed	LIPH_RABIT	Lipase member H (EC 3.1.1.-) (Lacrimal lipase)	LIPH	Oryctolagus cuniculus (Rabbit)	452		
+Q9U6W0	reviewed	PA1_POLAN	Phospholipase A1 (PLA1) (EC 3.1.1.32) (allergen Pol a 1)		Polistes annularis (Paper wasp)	301		
