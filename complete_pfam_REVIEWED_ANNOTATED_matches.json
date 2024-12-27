@@ -1,0 +1,3121 @@
+{
+  "count": 82,
+  "results": [
+    {
+      "metadata": {
+        "accession": "A0A0M3KKW3",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 300,
+        "source_organism": {
+          "taxId": "7444",
+          "scientificName": "Vespa basalis",
+          "fullName": "Vespa basalis (Hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 10,
+                  "end": 292,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 5.9e-43
+            }
+          ],
+          "protein_length": 300,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "A2VBC4",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 322,
+        "source_organism": {
+          "taxId": "291283",
+          "scientificName": "Polybia paulista",
+          "fullName": "Polybia paulista (Neotropical social wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 25,
+                  "end": 314,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.6e-45
+            }
+          ],
+          "protein_length": 322,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "A5PK46",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 469,
+        "source_organism": {
+          "taxId": "9913",
+          "scientificName": "Bos taurus",
+          "fullName": "Bos taurus (Bovine)"
+        },
+        "gene": "PNLIPRP2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 354,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 469,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "C0HLL3",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 304,
+        "source_organism": {
+          "taxId": "202808",
+          "scientificName": "Vespa velutina",
+          "fullName": "Vespa velutina (Asian yellow-legged hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 12,
+                  "end": 296,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.8e-47
+            }
+          ],
+          "protein_length": 304,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "D7EZN2",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 471,
+        "source_organism": {
+          "taxId": "9823",
+          "scientificName": "Sus scrofa",
+          "fullName": "Sus scrofa (Pig)"
+        },
+        "gene": "PNLIPRP2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 356,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 471,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "J3RZ81",
+        "name": "Putative endothelial lipase",
+        "source_database": "reviewed",
+        "length": 497,
+        "source_organism": {
+          "taxId": "8729",
+          "scientificName": "Crotalus adamanteus",
+          "fullName": "Crotalus adamanteus (Eastern diamondback rattlesnake)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 40,
+                  "end": 354,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.1e-102
+            }
+          ],
+          "protein_length": 497,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "O46559",
+        "name": "Hepatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 499,
+        "source_organism": {
+          "taxId": "9986",
+          "scientificName": "Oryctolagus cuniculus",
+          "fullName": "Oryctolagus cuniculus (Rabbit)"
+        },
+        "gene": "LIPC",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 20,
+                  "end": 349,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 499,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "O46647",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 475,
+        "source_organism": {
+          "taxId": "452646",
+          "scientificName": "Neovison vison",
+          "fullName": "Neovison vison (American mink)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 33,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.5e-127
+            }
+          ],
+          "protein_length": 475,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "O88354",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "43179",
+          "scientificName": "Ictidomys tridecemlineatus",
+          "fullName": "Ictidomys tridecemlineatus (Thirteen-lined ground squirrel)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P00591",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 450,
+        "source_organism": {
+          "taxId": "9823",
+          "scientificName": "Sus scrofa",
+          "fullName": "Sus scrofa (Pig)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 2,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 450,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P02843",
+        "name": "Vitellogenin-1",
+        "source_database": "reviewed",
+        "length": 439,
+        "source_organism": {
+          "taxId": "7227",
+          "scientificName": "Drosophila melanogaster",
+          "fullName": "Drosophila melanogaster (Fruit fly)"
+        },
+        "gene": "Yp1",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 129,
+                  "end": 410,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 9.3e-52
+            }
+          ],
+          "protein_length": 439,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P02844",
+        "name": "Vitellogenin-2",
+        "source_database": "reviewed",
+        "length": 442,
+        "source_organism": {
+          "taxId": "7227",
+          "scientificName": "Drosophila melanogaster",
+          "fullName": "Drosophila melanogaster (Fruit fly)"
+        },
+        "gene": "Yp2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 98,
+                  "end": 411,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 5.6e-77
+            }
+          ],
+          "protein_length": 442,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P06607",
+        "name": "Vitellogenin-3",
+        "source_database": "reviewed",
+        "length": 420,
+        "source_organism": {
+          "taxId": "7227",
+          "scientificName": "Drosophila melanogaster",
+          "fullName": "Drosophila melanogaster (Fruit fly)"
+        },
+        "gene": "Yp3",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 128,
+                  "end": 400,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.8e-45
+            }
+          ],
+          "protein_length": 420,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P06857",
+        "name": "Inactive pancreatic lipase-related protein 1",
+        "source_database": "reviewed",
+        "length": 467,
+        "source_organism": {
+          "taxId": "9615",
+          "scientificName": "Canis lupus familiaris",
+          "fullName": "Canis lupus familiaris (Dog)"
+        },
+        "gene": "PNLIPRP1",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 353,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 467,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P06858",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 475,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 30,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.7e-128
+            }
+          ],
+          "protein_length": 475,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P07867",
+        "name": "Hepatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 494,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Lipc",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 22,
+                  "end": 350,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 494,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0CH47",
+        "name": "Probable phospholipase A1 magnifin",
+        "source_database": "reviewed",
+        "length": 337,
+        "source_organism": {
+          "taxId": "202807",
+          "scientificName": "Vespa magnifica",
+          "fullName": "Vespa magnifica (Hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 45,
+                  "end": 329,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.7e-47
+            }
+          ],
+          "protein_length": 337,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0CH86",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 298,
+        "source_organism": {
+          "taxId": "30214",
+          "scientificName": "Vespula squamosa",
+          "fullName": "Vespula squamosa (Southern yellow jacket)"
+        },
+        "gene": null,
+        "in_alphafold": false
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 11,
+                  "end": 290,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.3e-45
+            }
+          ],
+          "protein_length": 298,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0CH87",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 301,
+        "source_organism": {
+          "taxId": "7445",
+          "scientificName": "Vespa crabro",
+          "fullName": "Vespa crabro (European hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 11,
+                  "end": 293,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 9e-45
+            }
+          ],
+          "protein_length": 301,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0DMB4",
+        "name": "Phospholipase A1 1",
+        "source_database": "reviewed",
+        "length": 334,
+        "source_organism": {
+          "taxId": "882735",
+          "scientificName": "Vespa affinis",
+          "fullName": "Vespa affinis (Lesser banded hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 42,
+                  "end": 326,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 8e-47
+            }
+          ],
+          "protein_length": 334,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0DMB5",
+        "name": "Phospholipase A1 2",
+        "source_database": "reviewed",
+        "length": 334,
+        "source_organism": {
+          "taxId": "882735",
+          "scientificName": "Vespa affinis",
+          "fullName": "Vespa affinis (Lesser banded hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 42,
+                  "end": 326,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3e-46
+            }
+          ],
+          "protein_length": 334,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0DPT0",
+        "name": "Phospholipase A1 VesT1.02",
+        "source_database": "reviewed",
+        "length": 301,
+        "source_organism": {
+          "taxId": "7450",
+          "scientificName": "Vespa tropica",
+          "fullName": "Vespa tropica (Greater banded hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 10,
+                  "end": 293,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.2e-46
+            }
+          ],
+          "protein_length": 301,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P0DSI2",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 379,
+        "source_organism": {
+          "taxId": "609295",
+          "scientificName": "Dinoponera quadriceps",
+          "fullName": "Dinoponera quadriceps (South American ant)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 110,
+                  "end": 318,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.6e-21
+            }
+          ],
+          "protein_length": 379,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P11150",
+        "name": "Hepatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 499,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "LIPC",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 21,
+                  "end": 349,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.2e-128
+            }
+          ],
+          "protein_length": 499,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P11151",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 478,
+        "source_organism": {
+          "taxId": "9913",
+          "scientificName": "Bos taurus",
+          "fullName": "Bos taurus (Bovine)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 27,
+                  "end": 341,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.7e-130
+            }
+          ],
+          "protein_length": 478,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P11152",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 474,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Lpl",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 30,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.9e-128
+            }
+          ],
+          "protein_length": 474,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P11153",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "10141",
+          "scientificName": "Cavia porcellus",
+          "fullName": "Cavia porcellus (Guinea pig)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 9,
+                  "end": 328,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.8e-126
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P11602",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 490,
+        "source_organism": {
+          "taxId": "9031",
+          "scientificName": "Gallus gallus",
+          "fullName": "Gallus gallus (Chicken)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 31,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 6.6e-118
+            }
+          ],
+          "protein_length": 490,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P16233",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P17892",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 482,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Pnliprp2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 31,
+                  "end": 367,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 482,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P27587",
+        "name": "Vitellogenin-2",
+        "source_database": "reviewed",
+        "length": 422,
+        "source_organism": {
+          "taxId": "7213",
+          "scientificName": "Ceratitis capitata",
+          "fullName": "Ceratitis capitata (Mediterranean fruit fly)"
+        },
+        "gene": "VG2-delta",
+        "in_alphafold": false
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 183,
+                  "end": 399,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.1e-40
+            }
+          ],
+          "protein_length": 422,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P27656",
+        "name": "Hepatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 510,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Lipc",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 22,
+                  "end": 350,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 510,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P27657",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Pnlip",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P27878",
+        "name": "Vitellogenin-1",
+        "source_database": "reviewed",
+        "length": 437,
+        "source_organism": {
+          "taxId": "7213",
+          "scientificName": "Ceratitis capitata",
+          "fullName": "Ceratitis capitata (Mediterranean fruit fly)"
+        },
+        "gene": "VG1-GAMMA",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 132,
+                  "end": 409,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.2e-48
+            }
+          ],
+          "protein_length": 437,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P29183",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 461,
+        "source_organism": {
+          "taxId": "9796",
+          "scientificName": "Equus caballus",
+          "fullName": "Equus caballus (Horse)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 14,
+                  "end": 348,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 461,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P49060",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 475,
+        "source_organism": {
+          "taxId": "9555",
+          "scientificName": "Papio anubis",
+          "fullName": "Papio anubis (Olive baboon)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 30,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 9.2e-129
+            }
+          ],
+          "protein_length": 475,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P49369",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 336,
+        "source_organism": {
+          "taxId": "7454",
+          "scientificName": "Vespula vulgaris",
+          "fullName": "Vespula vulgaris (Yellow jacket)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 47,
+                  "end": 328,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.3e-44
+            }
+          ],
+          "protein_length": 336,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P49923",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 478,
+        "source_organism": {
+          "taxId": "9823",
+          "scientificName": "Sus scrofa",
+          "fullName": "Sus scrofa (Pig)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 27,
+                  "end": 341,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.5e-127
+            }
+          ],
+          "protein_length": 478,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P50903",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "10141",
+          "scientificName": "Cavia porcellus",
+          "fullName": "Cavia porcellus (Guinea pig)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P51528",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 300,
+        "source_organism": {
+          "taxId": "7453",
+          "scientificName": "Vespula maculifrons",
+          "fullName": "Vespula maculifrons (Eastern yellow jacket)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 11,
+                  "end": 292,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.2e-44
+            }
+          ],
+          "protein_length": 300,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P53357",
+        "name": "Phospholipase A1 2",
+        "source_database": "reviewed",
+        "length": 303,
+        "source_organism": {
+          "taxId": "7441",
+          "scientificName": "Dolichovespula maculata",
+          "fullName": "Dolichovespula maculata (Bald-faced hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 12,
+                  "end": 295,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.6e-45
+            }
+          ],
+          "protein_length": 303,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P54315",
+        "name": "Inactive pancreatic lipase-related protein 1",
+        "source_database": "reviewed",
+        "length": 467,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "PNLIPRP1",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 353,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 467,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P54316",
+        "name": "Inactive pancreatic lipase-related protein 1",
+        "source_database": "reviewed",
+        "length": 473,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Pnliprp1",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 353,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 473,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P54317",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 469,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "PNLIPRP2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 354,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 469,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P54318",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 468,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Pnliprp2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 353,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 468,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P55031",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 478,
+        "source_organism": {
+          "taxId": "9685",
+          "scientificName": "Felis catus",
+          "fullName": "Felis catus (Cat)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 26,
+                  "end": 341,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.7e-126
+            }
+          ],
+          "protein_length": 478,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P81139",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 434,
+        "source_organism": {
+          "taxId": "10141",
+          "scientificName": "Cavia porcellus",
+          "fullName": "Cavia porcellus (Guinea pig)"
+        },
+        "gene": "PNLIPRP2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 2,
+                  "end": 319,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 434,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "P97535",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Pla1a",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 15,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.3e-110
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q02157",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "9986",
+          "scientificName": "Oryctolagus cuniculus",
+          "fullName": "Oryctolagus cuniculus (Rabbit)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q06000",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 474,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Lpl",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 32,
+                  "end": 338,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 6.5e-128
+            }
+          ],
+          "protein_length": 474,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q06478",
+        "name": "Phospholipase A1 1",
+        "source_database": "reviewed",
+        "length": 317,
+        "source_organism": {
+          "taxId": "7441",
+          "scientificName": "Dolichovespula maculata",
+          "fullName": "Dolichovespula maculata (Bald-faced hornet)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 27,
+                  "end": 309,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 5.4e-47
+            }
+          ],
+          "protein_length": 317,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q17RR3",
+        "name": "Pancreatic lipase-related protein 3",
+        "source_database": "reviewed",
+        "length": 467,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "PNLIPRP3",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.2e-113
+            }
+          ],
+          "protein_length": 467,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q29524",
+        "name": "Lipoprotein lipase",
+        "source_database": "reviewed",
+        "length": 478,
+        "source_organism": {
+          "taxId": "9940",
+          "scientificName": "Ovis aries",
+          "fullName": "Ovis aries (Sheep)"
+        },
+        "gene": "LPL",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 27,
+                  "end": 341,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.7e-130
+            }
+          ],
+          "protein_length": 478,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q32PY2",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 451,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Liph",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 38,
+                  "end": 325,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 9.2e-78
+            }
+          ],
+          "protein_length": 451,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q3SZ79",
+        "name": "Hepatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 500,
+        "source_organism": {
+          "taxId": "9913",
+          "scientificName": "Bos taurus",
+          "fullName": "Bos taurus (Bovine)"
+        },
+        "gene": "LIPC",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 22,
+                  "end": 350,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.6e-125
+            }
+          ],
+          "protein_length": 500,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q3ZU95",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 300,
+        "source_organism": {
+          "taxId": "30212",
+          "scientificName": "Vespula germanica",
+          "fullName": "Vespula germanica (German yellow jacket)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 11,
+                  "end": 292,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.7e-44
+            }
+          ],
+          "protein_length": 300,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q53H76",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "PLA1A",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.3e-100
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q5BKQ4",
+        "name": "Inactive pancreatic lipase-related protein 1",
+        "source_database": "reviewed",
+        "length": 473,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Pnliprp1",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 353,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 473,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q5E9H0",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "9913",
+          "scientificName": "Bos taurus",
+          "fullName": "Bos taurus (Bovine)"
+        },
+        "gene": "PLA1A",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.8e-102
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q5RBQ5",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "9601",
+          "scientificName": "Pongo abelii",
+          "fullName": "Pongo abelii (Sumatran orangutan)"
+        },
+        "gene": "PLA1A",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.6e-99
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q5XGE9",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 460,
+        "source_organism": {
+          "taxId": "8364",
+          "scientificName": "Xenopus tropicalis",
+          "fullName": "Xenopus tropicalis (Western clawed frog)"
+        },
+        "gene": "liph",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 42,
+                  "end": 335,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.2e-77
+            }
+          ],
+          "protein_length": 460,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q641F6",
+        "name": "Lipase member H-B",
+        "source_database": "reviewed",
+        "length": 460,
+        "source_organism": {
+          "taxId": "8355",
+          "scientificName": "Xenopus laevis",
+          "fullName": "Xenopus laevis (African clawed frog)"
+        },
+        "gene": "liph-b",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 42,
+                  "end": 335,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.6e-78
+            }
+          ],
+          "protein_length": 460,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q64424",
+        "name": "Pancreatic lipase-related protein 2",
+        "source_database": "reviewed",
+        "length": 470,
+        "source_organism": {
+          "taxId": "10157",
+          "scientificName": "Myocastor coypus",
+          "fullName": "Myocastor coypus (Coypu)"
+        },
+        "gene": "PNLIPRP2",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 20,
+                  "end": 355,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 470,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q64425",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 457,
+        "source_organism": {
+          "taxId": "10157",
+          "scientificName": "Myocastor coypus",
+          "fullName": "Myocastor coypus (Coypu)"
+        },
+        "gene": "PNLIP",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 10,
+                  "end": 344,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 457,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q68KK0",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 346,
+        "source_organism": {
+          "taxId": "13686",
+          "scientificName": "Solenopsis invicta",
+          "fullName": "Solenopsis invicta (Red imported fire ant)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 70,
+                  "end": 252,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.2e-19
+            }
+          ],
+          "protein_length": 346,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6DBU8",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 454,
+        "source_organism": {
+          "taxId": "7955",
+          "scientificName": "Danio rerio",
+          "fullName": "Danio rerio (Zebrafish)"
+        },
+        "gene": "liph",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 37,
+                  "end": 331,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 6e-82
+            }
+          ],
+          "protein_length": 454,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6NYZ4",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "7955",
+          "scientificName": "Danio rerio",
+          "fullName": "Danio rerio (Zebrafish)"
+        },
+        "gene": "pla1a",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 22,
+                  "end": 340,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.8e-82
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6P8U6",
+        "name": "Pancreatic triacylglycerol lipase",
+        "source_database": "reviewed",
+        "length": 465,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Pnlip",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 18,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 0
+            }
+          ],
+          "protein_length": 465,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6PA23",
+        "name": "Lipase member H-A",
+        "source_database": "reviewed",
+        "length": 460,
+        "source_organism": {
+          "taxId": "8355",
+          "scientificName": "Xenopus laevis",
+          "fullName": "Xenopus laevis (African clawed frog)"
+        },
+        "gene": "liph-a",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 43,
+                  "end": 335,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 6.9e-81
+            }
+          ],
+          "protein_length": 460,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6Q249",
+        "name": "Phospholipase A1 4",
+        "source_database": "reviewed",
+        "length": 316,
+        "source_organism": {
+          "taxId": "743375",
+          "scientificName": "Polistes dominula",
+          "fullName": "Polistes dominula (European paper wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 25,
+                  "end": 307,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.2e-43
+            }
+          ],
+          "protein_length": 316,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6Q250",
+        "name": "Phospholipase A1 3",
+        "source_database": "reviewed",
+        "length": 316,
+        "source_organism": {
+          "taxId": "743375",
+          "scientificName": "Polistes dominula",
+          "fullName": "Polistes dominula (European paper wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 25,
+                  "end": 302,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 4.5e-43
+            }
+          ],
+          "protein_length": 316,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6Q251",
+        "name": "Phospholipase A1 2",
+        "source_database": "reviewed",
+        "length": 316,
+        "source_organism": {
+          "taxId": "743375",
+          "scientificName": "Polistes dominula",
+          "fullName": "Polistes dominula (European paper wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 25,
+                  "end": 307,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 3.8e-43
+            }
+          ],
+          "protein_length": 316,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6Q252",
+        "name": "Phospholipase A1 1",
+        "source_database": "reviewed",
+        "length": 337,
+        "source_organism": {
+          "taxId": "743375",
+          "scientificName": "Polistes dominula",
+          "fullName": "Polistes dominula (European paper wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 45,
+                  "end": 323,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 5.7e-43
+            }
+          ],
+          "protein_length": 337,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q6XZB0",
+        "name": "Lipase member I",
+        "source_database": "reviewed",
+        "length": 460,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "LIPI",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 38,
+                  "end": 333,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.6e-82
+            }
+          ],
+          "protein_length": 460,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q8CIV3",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 451,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Liph",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 38,
+                  "end": 325,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.1e-76
+            }
+          ],
+          "protein_length": 451,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q8VBX1",
+        "name": "Endothelial lipase",
+        "source_database": "reviewed",
+        "length": 493,
+        "source_organism": {
+          "taxId": "10116",
+          "scientificName": "Rattus norvegicus",
+          "fullName": "Rattus norvegicus (Rat)"
+        },
+        "gene": "Lipg",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 47,
+                  "end": 346,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.5e-102
+            }
+          ],
+          "protein_length": 493,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q8VI78",
+        "name": "Phospholipase A1 member A",
+        "source_database": "reviewed",
+        "length": 456,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Pla1a",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 17,
+                  "end": 336,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2e-104
+            }
+          ],
+          "protein_length": 456,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q8WWY8",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 451,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "LIPH",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 34,
+                  "end": 326,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1e-78
+            }
+          ],
+          "protein_length": 451,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q9BDJ4",
+        "name": "Lipase member H",
+        "source_database": "reviewed",
+        "length": 452,
+        "source_organism": {
+          "taxId": "9986",
+          "scientificName": "Oryctolagus cuniculus",
+          "fullName": "Oryctolagus cuniculus (Rabbit)"
+        },
+        "gene": "LIPH",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 34,
+                  "end": 327,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 6.3e-80
+            }
+          ],
+          "protein_length": 452,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q9U6W0",
+        "name": "Phospholipase A1",
+        "source_database": "reviewed",
+        "length": 301,
+        "source_organism": {
+          "taxId": "27505",
+          "scientificName": "Polistes annularis",
+          "fullName": "Polistes annularis (Paper wasp)"
+        },
+        "gene": null,
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 9,
+                  "end": 279,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": false,
+              "model": "PF00151",
+              "score": 1.4e-42
+            }
+          ],
+          "protein_length": 301,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q9WVG5",
+        "name": "Endothelial lipase",
+        "source_database": "reviewed",
+        "length": 500,
+        "source_organism": {
+          "taxId": "10090",
+          "scientificName": "Mus musculus",
+          "fullName": "Mus musculus (Mouse)"
+        },
+        "gene": "Lipg",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 46,
+                  "end": 344,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 1.7e-103
+            }
+          ],
+          "protein_length": 500,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "Q9Y5X9",
+        "name": "Endothelial lipase",
+        "source_database": "reviewed",
+        "length": 500,
+        "source_organism": {
+          "taxId": "9606",
+          "scientificName": "Homo sapiens",
+          "fullName": "Homo sapiens (Human)"
+        },
+        "gene": "LIPG",
+        "in_alphafold": true
+      },
+      "entries": [
+        {
+          "accession": "PF00151",
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 36,
+                  "end": 344,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": true,
+              "model": "PF00151",
+              "score": 2.3e-105
+            }
+          ],
+          "protein_length": 500,
+          "source_database": "pfam",
+          "entry_type": "domain",
+          "entry_integrated": "ipr013818"
+        }
+      ]
+    }
+  ]
+}
