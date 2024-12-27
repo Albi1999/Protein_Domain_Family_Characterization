@@ -1,0 +1,83 @@
+protein_name,uniprot_id,organism,domain_start,domain_end,domain_length,protein_length,score
+Phospholipase A1,A0A0M3KKW3,Vespa basalis,10,292,283,300,5.9e-43
+Phospholipase A1,A2VBC4,Polybia paulista,25,314,290,322,4.6e-45
+Pancreatic lipase-related protein 2,A5PK46,Bos taurus,18,354,337,469,0.0
+Phospholipase A1,C0HLL3,Vespa velutina,12,296,285,304,2.8e-47
+Pancreatic lipase-related protein 2,D7EZN2,Sus scrofa,18,356,339,471,0.0
+Putative endothelial lipase,J3RZ81,Crotalus adamanteus,40,354,315,497,3.1e-102
+Hepatic triacylglycerol lipase,O46559,Oryctolagus cuniculus,20,349,330,499,0.0
+Lipoprotein lipase,O46647,Neovison vison,33,338,306,475,2.5e-127
+Pancreatic triacylglycerol lipase,O88354,Ictidomys tridecemlineatus,17,352,336,465,0.0
+Pancreatic triacylglycerol lipase,P00591,Sus scrofa,2,336,335,450,0.0
+Vitellogenin-1,P02843,Drosophila melanogaster,129,410,282,439,9.3e-52
+Vitellogenin-2,P02844,Drosophila melanogaster,98,411,314,442,5.6e-77
+Vitellogenin-3,P06607,Drosophila melanogaster,128,400,273,420,1.8e-45
+Inactive pancreatic lipase-related protein 1,P06857,Canis lupus familiaris,18,353,336,467,0.0
+Lipoprotein lipase,P06858,Homo sapiens,30,338,309,475,1.7e-128
+Hepatic triacylglycerol lipase,P07867,Rattus norvegicus,22,350,329,494,0.0
+Probable phospholipase A1 magnifin,P0CH47,Vespa magnifica,45,329,285,337,2.7e-47
+Phospholipase A1,P0CH86,Vespula squamosa,11,290,280,298,1.3e-45
+Phospholipase A1,P0CH87,Vespa crabro,11,293,283,301,9e-45
+Phospholipase A1 1,P0DMB4,Vespa affinis,42,326,285,334,8e-47
+Phospholipase A1 2,P0DMB5,Vespa affinis,42,326,285,334,3e-46
+Phospholipase A1 VesT1.02,P0DPT0,Vespa tropica,10,293,284,301,1.2e-46
+Phospholipase A1,P0DSI2,Dinoponera quadriceps,110,318,209,379,4.6e-21
+Hepatic triacylglycerol lipase,P11150,Homo sapiens,21,349,329,499,3.2e-128
+Lipoprotein lipase,P11151,Bos taurus,27,341,315,478,3.7e-130
+Lipoprotein lipase,P11152,Mus musculus,30,338,309,474,2.9e-128
+Lipoprotein lipase,P11153,Cavia porcellus,9,328,320,465,3.8e-126
+Lipoprotein lipase,P11602,Gallus gallus,31,338,308,490,6.6e-118
+Pancreatic triacylglycerol lipase,P16233,Homo sapiens,17,352,336,465,0.0
+Pancreatic lipase-related protein 2,P17892,Mus musculus,31,367,337,482,0.0
+Vitellogenin-2,P27587,Ceratitis capitata,183,399,217,422,1.1e-40
+Hepatic triacylglycerol lipase,P27656,Mus musculus,22,350,329,510,0.0
+Pancreatic triacylglycerol lipase,P27657,Rattus norvegicus,17,352,336,465,0.0
+Vitellogenin-1,P27878,Ceratitis capitata,132,409,278,437,4.2e-48
+Pancreatic triacylglycerol lipase,P29183,Equus caballus,14,348,335,461,0.0
+Lipoprotein lipase,P49060,Papio anubis,30,338,309,475,9.2e-129
+Phospholipase A1,P49369,Vespula vulgaris,47,328,282,336,1.3e-44
+Lipoprotein lipase,P49923,Sus scrofa,27,341,315,478,2.5e-127
+Pancreatic triacylglycerol lipase,P50903,Cavia porcellus,18,352,335,465,0.0
+Phospholipase A1,P51528,Vespula maculifrons,11,292,282,300,3.2e-44
+Phospholipase A1 2,P53357,Dolichovespula maculata,12,295,284,303,1.6e-45
+Inactive pancreatic lipase-related protein 1,P54315,Homo sapiens,18,353,336,467,0.0
+Inactive pancreatic lipase-related protein 1,P54316,Rattus norvegicus,18,353,336,473,0.0
+Pancreatic lipase-related protein 2,P54317,Homo sapiens,18,354,337,469,0.0
+Pancreatic lipase-related protein 2,P54318,Rattus norvegicus,17,353,337,468,0.0
+Lipoprotein lipase,P55031,Felis catus,26,341,316,478,3.7e-126
+Pancreatic lipase-related protein 2,P81139,Cavia porcellus,2,319,318,434,0.0
+Phospholipase A1 member A,P97535,Rattus norvegicus,15,336,322,456,3.3e-110
+Pancreatic triacylglycerol lipase,Q02157,Oryctolagus cuniculus,18,352,335,465,0.0
+Lipoprotein lipase,Q06000,Rattus norvegicus,32,338,307,474,6.5e-128
+Phospholipase A1 1,Q06478,Dolichovespula maculata,27,309,283,317,5.4e-47
+Pancreatic lipase-related protein 3,Q17RR3,Homo sapiens,18,352,335,467,3.2e-113
+Lipoprotein lipase,Q29524,Ovis aries,27,341,315,478,1.7e-130
+Lipase member H,Q32PY2,Rattus norvegicus,38,325,288,451,9.2e-78
+Hepatic triacylglycerol lipase,Q3SZ79,Bos taurus,22,350,329,500,2.6e-125
+Phospholipase A1,Q3ZU95,Vespula germanica,11,292,282,300,1.7e-44
+Phospholipase A1 member A,Q53H76,Homo sapiens,17,336,320,456,4.3e-100
+Inactive pancreatic lipase-related protein 1,Q5BKQ4,Mus musculus,18,353,336,473,0.0
+Phospholipase A1 member A,Q5E9H0,Bos taurus,17,336,320,456,4.8e-102
+Phospholipase A1 member A,Q5RBQ5,Pongo abelii,17,336,320,456,1.6e-99
+Lipase member H,Q5XGE9,Xenopus tropicalis,42,335,294,460,1.2e-77
+Lipase member H-B,Q641F6,Xenopus laevis,42,335,294,460,3.6e-78
+Pancreatic lipase-related protein 2,Q64424,Myocastor coypus,20,355,336,470,0.0
+Pancreatic triacylglycerol lipase,Q64425,Myocastor coypus,10,344,335,457,0.0
+Phospholipase A1,Q68KK0,Solenopsis invicta,70,252,183,346,1.2e-19
+Lipase member H,Q6DBU8,Danio rerio,37,331,295,454,6e-82
+Phospholipase A1 member A,Q6NYZ4,Danio rerio,22,340,319,456,4.8e-82
+Pancreatic triacylglycerol lipase,Q6P8U6,Mus musculus,18,352,335,465,0.0
+Lipase member H-A,Q6PA23,Xenopus laevis,43,335,293,460,6.9e-81
+Phospholipase A1 4,Q6Q249,Polistes dominula,25,307,283,316,2.2e-43
+Phospholipase A1 3,Q6Q250,Polistes dominula,25,302,278,316,4.5e-43
+Phospholipase A1 2,Q6Q251,Polistes dominula,25,307,283,316,3.8e-43
+Phospholipase A1 1,Q6Q252,Polistes dominula,45,323,279,337,5.7e-43
+Lipase member I,Q6XZB0,Homo sapiens,38,333,296,460,2.6e-82
+Lipase member H,Q8CIV3,Mus musculus,38,325,288,451,1.1e-76
+Endothelial lipase,Q8VBX1,Rattus norvegicus,47,346,300,493,2.5e-102
+Phospholipase A1 member A,Q8VI78,Mus musculus,17,336,320,456,2e-104
+Lipase member H,Q8WWY8,Homo sapiens,34,326,293,451,1e-78
+Lipase member H,Q9BDJ4,Oryctolagus cuniculus,34,327,294,452,6.3e-80
+Phospholipase A1,Q9U6W0,Polistes annularis,9,279,271,301,1.4e-42
+Endothelial lipase,Q9WVG5,Mus musculus,46,344,299,500,1.7e-103
+Endothelial lipase,Q9Y5X9,Homo sapiens,36,344,309,500,2.3e-105
