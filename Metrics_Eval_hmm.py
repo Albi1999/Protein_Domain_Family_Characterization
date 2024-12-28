@@ -27,11 +27,12 @@ def parse_hmmsearch_output(hmmsearch_file):
     with open(hmmsearch_file, 'r') as f:
         lines = f.readlines()
         
-    in_domain_annotation = True
+    in_domain_annotation = False
     current_protein = None
     
     for line in lines:
         if line.startswith(">>"):
+            in_domain_annotation = False
             # Extract protein ID from header line
             current_protein = line.split()[1].split("|")[1]
             hmm_proteins.add(current_protein)
