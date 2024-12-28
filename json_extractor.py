@@ -37,7 +37,7 @@ def extract_pfam_info(json_file):
     return pfam_matches
 
 # Use the function to extract information
-json_file = 'complete_pfam_matches.json'
+json_file = 'pfam_domain_positions.json'
 matches = extract_pfam_info(json_file)
 
 # Print the results in a formatted way

@@ -99,7 +99,7 @@ def main():
     
     fetcher = InterProAPIFetcher(base_url)
     fetcher.fetch_all_pages()
-    fetcher.save_results('complete_pfam_matches.json')
+    fetcher.save_results('pfam_domain_positions.json')
 
 if __name__ == "__main__":
     main()

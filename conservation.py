@@ -97,39 +97,12 @@ class ConservationAnalyzer:
 
 
 
-    """
-    def find_similar_sequences(self, similarity_threshold):
-        # TODO : I think using JalView for this is better : JalView --> Edit --> Remove Redundancy 
-        similar_pairs = []
-        
-        for i in range(len(self.alignment)):
-            for j in range(i + 1, len(self.alignment)):
-                seq1 = str(self.alignment[i].seq)
-                seq2 = str(self.alignment[j].seq)
-                
-                # Calculate similarity (ignoring gaps)
-                matches = sum(a == b for a, b in zip(seq1, seq2) if a != '-' and b != '-')
-                total = sum(1 for a, b in zip(seq1, seq2) if a != '-' and b != '-')
-                
-                if total > 0:
-                    similarity = matches / total
-                    if similarity >= similarity_threshold:
-                        similar_pairs.append((
-                            self.alignment[i].id,
-                            self.alignment[j].id,
-                            similarity
-                        ))
-    
-        return similar_pairs
 
-
-    def analyze_rows(self, similarity_threshold = 0.95):
-        similar_pairs = self.find_similar_sequences(similarity_threshold)
-        print(f"We have {len(similar_pairs)} many pairs with {similarity_threshold} or more identity (excluding gaps) of a total of {self.num_sequences} sequences")
-    """
 
     # TODO : I took very strict values now such that the number of residues per sequence is below 100 (right now we have length 77) ; the PSSM creation with 
     # much higher length did not work, but maybe we should write an email and ask ; nevertheless, we can first try some evaluation based on that PSSM and see our scores
+
+    # TODO : diff gap_thresh/conservation threshold for different number of columns in output (OPTIMIZE)
     def analyze_columns(self, gap_threshold=0.37, conservation_threshold=0.9):
         """
         Analyze all columns and return comprehensive metrics
@@ -155,7 +128,7 @@ class ConservationAnalyzer:
                 # ; right now we do with groups and not single amino acid sequence since I'd say the groups
                 # are more representative (if we do single amino acids, we'd delete more stuff))
                 'suggested_remove': (gap_freq > gap_threshold or       
-                                   group_cons < conservation_threshold)
+                                   group_cons < conservation_threshold) # TODO : OPTIMIZE WHEN TO REMOVE
             })
         
         return pd.DataFrame(data)
