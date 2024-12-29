@@ -103,7 +103,7 @@ class ConservationAnalyzer:
     # much higher length did not work, but maybe we should write an email and ask ; nevertheless, we can first try some evaluation based on that PSSM and see our scores
 
     # TODO : diff gap_thresh/conservation threshold for different number of columns in output (OPTIMIZE)
-    def analyze_columns(self, gap_threshold=0.37, conservation_threshold=0.9):
+    def analyze_columns(self, gap_threshold=0.95, conservation_threshold=0.9):
         """
         Analyze all columns and return comprehensive metrics
         Returns DataFrame with various conservation metrics for each position
@@ -127,8 +127,8 @@ class ConservationAnalyzer:
                 # Check that the group conservation is high enough (i.e. the amino acids are not too different
                 # ; right now we do with groups and not single amino acid sequence since I'd say the groups
                 # are more representative (if we do single amino acids, we'd delete more stuff))
-                'suggested_remove': (gap_freq > gap_threshold or       
-                                   group_cons < conservation_threshold) # TODO : OPTIMIZE WHEN TO REMOVE
+                'suggested_remove': (gap_freq > gap_threshold) #or       
+                                 #  group_cons < conservation_threshold) # TODO : OPTIMIZE WHEN TO REMOVE
             })
         
         return pd.DataFrame(data)
@@ -189,7 +189,7 @@ def remove_columns_from_alignment(input_file, output_file, columns_to_remove, fo
 # Example usage:
 if __name__ == "__main__":
     # Initialize analyzer 
-    analyzer = ConservationAnalyzer("clustal_rows_removed_100threshold.fa")
+    analyzer = ConservationAnalyzer("UNIPROTKB_INITIAL.fasta")
     
     # Get comprehensive analysis
     analysis = analyzer.analyze_columns()
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     
     # Remove columns and save new alignment
     new_alignment = remove_columns_from_alignment(
-        "clustal_rows_removed_100threshold.fa",
+        "UNIPROTKB_INITIAL.fasta",
         "trimmed_alignment.fasta",
         columns_to_remove
     )
