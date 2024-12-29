@@ -1,5 +1,5 @@
 # Extract UniProt IDs from a FASTA file
-fasta_file = "trimmed_alignment.fasta"  # Update the path if needed
+fasta_file = "trimmed_alignment.fasta" 
 cleaned_protein_ids = []
 
 with open(fasta_file, "r") as file:

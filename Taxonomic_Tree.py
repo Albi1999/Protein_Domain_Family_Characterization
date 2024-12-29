@@ -1,39 +1,61 @@
 import pandas as pd
-from collections import Counter
-from scipy.cluster.hierarchy import dendrogram, linkage
 import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import dendrogram, linkage
+from scipy.spatial.distance import pdist, squareform
+from collections import Counter
+import numpy as np
 
-# Load taxonomy data
-taxonomy_file = "taxonomy_info.csv"  # Replace with the correct file path
-taxonomy_data = pd.read_csv(taxonomy_file)
+# Load cleaned protein IDs
+with open("cleaned_protein_ids.txt", "r") as f:
+    protein_ids = f.read().splitlines()
 
-# Ensure the "Lineage" column is processed correctly
-taxonomy_data['Lineage'] = taxonomy_data['Lineage'].fillna("Unknown")
+# Load taxonomy info
+taxonomy_info = pd.read_csv("taxonomy_info.csv")
 
-# Count occurrences of each lineage
-lineage_counts = Counter(taxonomy_data['Lineage'])
+# Filter taxonomy data to include only relevant protein IDs
+filtered_taxonomy = taxonomy_info[taxonomy_info['Protein ID'].isin(protein_ids)]
 
-# Create a matrix for hierarchical clustering
-lineage_labels = list(lineage_counts.keys())
-lineage_sizes = [[count] for count in lineage_counts.values()]
+# Simplify taxonomic lineage (e.g., keeping genus and species)
+def simplify_lineage(lineage):
+    levels = lineage.split(" > ")
+    if len(levels) >= 2:
+        return " > ".join(levels[-2:])  # Keep genus and species
+    return lineage
+
+filtered_taxonomy['Simplified_Lineage'] = filtered_taxonomy['Lineage'].apply(simplify_lineage)
+
+# Count the abundance of each taxonomic group
+lineage_counts = Counter(filtered_taxonomy['Simplified_Lineage'])
+
+# Convert counts to a DataFrame
+lineage_df = pd.DataFrame(list(lineage_counts.items()), columns=['Lineage', 'Count'])
 
 # Perform hierarchical clustering
-Z = linkage(lineage_sizes, method='ward')
+lineages = lineage_df['Lineage'].tolist()
+counts = lineage_df['Count'].tolist()
 
-# Adjust figure size (in inches) and resolution (DPI)
-fig_width = 10  # Adjust width
-fig_height = 6  # Adjust height
-dpi = 300       # Set high DPI for better quality
+# Create a condensed distance matrix using pdist
+condensed_distance_matrix = pdist(np.array(counts).reshape(-1, 1), metric='euclidean')
+linkage_matrix = linkage(condensed_distance_matrix, method='ward')
 
 # Plot the dendrogram
-plt.figure(figsize=(fig_width, fig_height), dpi=dpi)
-dendrogram(Z, labels=lineage_labels, orientation='right', leaf_font_size=8)
-plt.title("Taxonomy Tree", fontsize=14)
-plt.xlabel("Counts", fontsize=12)
+plt.figure(figsize=(15, 30))  # Adjust figure size for better readability
+
+# Plot dendrogram
+dendrogram(
+    linkage_matrix,
+    labels=lineages,
+    orientation="right",
+    leaf_font_size=8,  # Smaller font size for better spacing
+    color_threshold=0.5
+)
+
+# Adjust plot aesthetics
+plt.title("Taxonomy Tree with Scaled Node Sizes", fontsize=14)
+plt.xlabel("Distance", fontsize=12)
 plt.ylabel("Lineage", fontsize=12)
 plt.tight_layout()
 
-# Save the plot
-output_file = "tree_output.png"  # Set your desired output file name
-plt.savefig(output_file, dpi=dpi)
+# Save and display the plot
+plt.savefig("taxonomy_tree.png", dpi=300)
 plt.show()
