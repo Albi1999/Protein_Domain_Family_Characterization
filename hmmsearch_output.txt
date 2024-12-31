@@ -384,7 +384,7 @@ Domain annotation for each sequence (and alignments):
 >> sp|P54317|LIPR2_HUMAN  Pancreatic lipase-related protein 2 OS=Homo sapiens OX=9606 GN=PNLIPRP2 PE=1 SV=2
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  313.2   5.0   5.6e-96   1.5e-92       1     464 [.       1     465 [.       1     469 [] 0.98
+   1 !  313.2   5.0   5.6e-96   1.5e-92      - 1     464 [.       1     465 [.       1     469 [] 0.98
 
   Alignments for each domain:
   == domain 1  score: 313.2 bits;  conditional E-value: 5.6e-96

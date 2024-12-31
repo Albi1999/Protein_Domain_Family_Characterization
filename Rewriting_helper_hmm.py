@@ -47,7 +47,12 @@ with open(input_file_path, "r") as infile:
 fieldnames = ["protein_name", "uniprot_id"]
 max_domains = max(len(protein["domains"]) for protein in parsed_data)
 for i in range(1, max_domains + 1):
-    fieldnames.extend([
+    if i == 1:
+        fieldnames.extend([
+            f"E-value", f"domain_start", f"domain_end", f"domain_length"
+        ])
+    else:
+        fieldnames.extend([
         f"domain_{i}_E-value", f"domain_{i}_start", f"domain_{i}_end", f"domain_{i}_length"
     ])
 
@@ -61,10 +66,16 @@ with open(output_file_path, "w", newline="") as outfile:
             "uniprot_id": protein["uniprot_id"]
         }
         for i, domain in enumerate(protein["domains"], start=1):
-            row[f"domain_{i}_E-value"] = domain[0]
-            row[f"domain_{i}_start"] = domain[1]
-            row[f"domain_{i}_end"] = domain[2]
-            row[f"domain_{i}_length"] = domain[3]
+            if i == 1:
+                row[f"E-value"] = domain[0]
+                row[f"domain_start"] = domain[1]
+                row[f"domain_end"] = domain[2]
+                row[f"domain_length"] = domain[3] 
+            else:
+                row[f"domain_{i}_E-value"] = domain[0]
+                row[f"domain_{i}_start"] = domain[1]
+                row[f"domain_{i}_end"] = domain[2]
+                row[f"domain_{i}_length"] = domain[3]
         writer.writerow(row)
 
 print(f"CSV file generated: {output_file_path}")

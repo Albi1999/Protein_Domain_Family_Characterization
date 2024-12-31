@@ -1,9 +1,9 @@
-protein_name,uniprot_id,domain_1_E-value,domain_1_start,domain_1_end,domain_1_length,domain_2_E-value,domain_2_start,domain_2_end,domain_2_length,domain_3_E-value,domain_3_start,domain_3_end,domain_3_length,domain_4_E-value,domain_4_start,domain_4_end,domain_4_length,domain_5_E-value,domain_5_start,domain_5_end,domain_5_length
+protein_name,uniprot_id,E-value,domain_start,domain_end,domain_length,domain_2_E-value,domain_2_start,domain_2_end,domain_2_length,domain_3_E-value,domain_3_start,domain_3_end,domain_3_length,domain_4_E-value,domain_4_start,domain_4_end,domain_4_length,domain_5_E-value,domain_5_start,domain_5_end,domain_5_length
 LIPR1_CANLF,P06857,1.9e-105,1,466,466,,,,,,,,,,,,,,,,
 LIPR1_MOUSE,Q5BKQ4,4.4e-102,1,467,467,,,,,,,,,,,,,,,,
 LIPR1_RAT,P54316,5.6e-102,1,466,466,,,,,,,,,,,,,,,,
 LIPR1_HUMAN,P54315,7e-101,1,466,466,,,,,,,,,,,,,,,,
-LIPR2_HUMAN,P54317,1.5e-92,1,465,465,,,,,,,,,,,,,,,,
+LIPR2_HUMAN,P54317,,,,,,,,,,,,,,,,,,,,
 LIPR2_MYOCO,Q64424,1.8e-90,2,465,464,,,,,,,,,,,,,,,,
 LIPR2_MOUSE,P17892,4.7e-90,16,477,462,,,,,,,,,,,,,,,,
 LIPR2_BOVIN,A5PK46,2.2e-89,1,460,460,,,,,,,,,,,,,,,,
