@@ -122,11 +122,11 @@ def plot_wordcloud(enrichment_results, annotations, output_file="enriched_terms_
 
 def main():
     # Load family protein IDs
-    protein_ids = read_protein_ids("cleaned_protein_ids.txt")
+    protein_ids = read_protein_ids("hmm_cleaned_protein_ids.txt")
     family_annotations = {pid: fetch_go_annotations(pid) for pid in protein_ids}
 
     # Fetch background annotations in batches
-    protein_batches = fetch_random_proteins(batch_size=50, total_proteins=200)
+    protein_batches = fetch_random_proteins(batch_size=50, total_proteins=217)
     background_annotations = fetch_background_annotations(protein_batches)
 
     # Flatten annotations for Fisher's test

@@ -1,0 +1,8 @@
+2024-12-30 19:53:21,346 - INFO - Extracted 217 unique protein IDs
+2024-12-30 19:53:21,347 - INFO - Will save taxonomy data to: taxonomy_info_improved.csv
+2024-12-30 19:54:24,949 - INFO - Taxonomy data saved to taxonomy_info_improved.csv
+2024-12-30 19:54:24,950 - INFO - Retrieval statistics:
+2024-12-30 19:54:24,950 - INFO - Success: 217 (100.00%)
+2024-12-30 19:54:24,950 - INFO - Failed: 0 (0.00%)
+2024-12-30 19:54:24,950 - INFO - Will save taxonomic tree to: taxonomy_tree_improved.png
+2024-12-30 19:54:25,255 - ERROR - Analysis failed: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
