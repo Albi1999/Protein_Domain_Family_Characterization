@@ -10,7 +10,7 @@ parsed_data = []
 
 # Regular expressions to capture key information
 header_regex = r">> ([^\s]+)"
-domain_regex = r"\s+(\d+) [!?]\s+[\d\.]+\s+[\d\.]+\s+([\de\.\+\-]+)\s+[\de\.\+\-]+\s+\d+\s+\d+\s+(?:\[\.|\.\.)+\s+(\d+)\s+(\d+)"
+domain_regex = r"\s+(\d+) [!?]\s+[\d\.]+\s+[\d\.]+\s+[\de\.\+\-]+\s+([\de\.\+\-]+)\s+\d+\s+\d+\s+(?:\[\.|\.\.)+\s+(\d+)\s+(\d+)"
 
 with open(input_file_path, "r") as infile:
     current_protein = None
