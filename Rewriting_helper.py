@@ -36,7 +36,7 @@ def parse_psiblast_output(input_file):
                         'domain_start': int(parts[4]),  # sstart
                         'domain_end': int(parts[5]),    # send
                         'domain_length': int(parts[5]) - int(parts[4]) + 1,
-                        'score': float(parts[6])  # Using pident as score
+                        'E-value': float(parts[7])  
                     }
                     results.append(result)
     
@@ -47,7 +47,7 @@ def write_csv(results, output_file):
         return
     # Notice that we skip the start & end positions in the query domain (i.e. the PSSM here), as we are only interested in where we found matches in the sequence of SwissProt we looked through
     fieldnames = ['protein_name', 'uniprot_id', 'organism', 'domain_start', 
-                 'domain_end', 'domain_length', 'score']
+                 'domain_end', 'domain_length', 'E-value']
     
     with open(output_file, 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)

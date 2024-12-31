@@ -10,7 +10,7 @@ parsed_data = []
 
 # Regular expressions to capture key information
 header_regex = r">> ([^\s]+)"
-domain_regex = r"\s+(\d+) [!?]\s+([\d\.]+)\s+[\d\.]+\s+[\de\.\+\-]+\s+[\de\.\+\-]+\s+\d+\s+\d+\s+(?:\[\.|\.\.)+\s+(\d+)\s+(\d+)"
+domain_regex = r"\s+(\d+) [!?]\s+[\d\.]+\s+[\d\.]+\s+([\de\.\+\-]+)\s+[\de\.\+\-]+\s+\d+\s+\d+\s+(?:\[\.|\.\.)+\s+(\d+)\s+(\d+)"
 
 with open(input_file_path, "r") as infile:
     current_protein = None
@@ -48,7 +48,7 @@ fieldnames = ["protein_name", "uniprot_id"]
 max_domains = max(len(protein["domains"]) for protein in parsed_data)
 for i in range(1, max_domains + 1):
     fieldnames.extend([
-        f"domain_{i}_score", f"domain_{i}_start", f"domain_{i}_end", f"domain_{i}_length"
+        f"domain_{i}_E-value", f"domain_{i}_start", f"domain_{i}_end", f"domain_{i}_length"
     ])
 
 # Write to CSV
@@ -61,7 +61,7 @@ with open(output_file_path, "w", newline="") as outfile:
             "uniprot_id": protein["uniprot_id"]
         }
         for i, domain in enumerate(protein["domains"], start=1):
-            row[f"domain_{i}_score"] = domain[0]
+            row[f"domain_{i}_E-value"] = domain[0]
             row[f"domain_{i}_start"] = domain[1]
             row[f"domain_{i}_end"] = domain[2]
             row[f"domain_{i}_length"] = domain[3]
