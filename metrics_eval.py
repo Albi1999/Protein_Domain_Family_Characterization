@@ -277,5 +277,5 @@ pfam_file = 'pfam_domain_positions.csv'
 #results_all = evaluate_model_protein_level(psiblast_file, pfam_file, only_found=False)
 
 print("\n===============================")
-print("Evaluation only on PSIBLAST-found proteins:")
-evaluate_model(psiblast_file,hmm_file, pfam_file, only_found=True, e_threshold= 0.001)
+print("Evaluation only on found proteins in both PSSM/HMM:")
+evaluate_model(psiblast_file,hmm_file, pfam_file, only_found=False, e_threshold= 0.001)
