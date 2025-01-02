@@ -1,15 +1,33 @@
-# Function Task: Perform Gene Ontology (GO) enrichment analysis for a set of proteins.
-
 import requests
+import pandas as pd
 import xml.etree.ElementTree as ET
 from scipy.stats import fisher_exact
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-import random
 import numpy as np
+from tqdm import tqdm
+import random
+import obonet
+import networkx as nx
+from statsmodels.stats.multitest import multipletests
 
 # -----------------------------------------------------------------------------
-# Step 1: Fetch GO Annotations from UniProt
+# Step 1: Load Protein IDs
+# -----------------------------------------------------------------------------
+
+def load_protein_ids(psiblast_file, hmm_file, e_threshold=0.001):
+    """Load protein IDs from PSI-BLAST and HMM search results."""
+    psiblast_df = pd.read_csv(psiblast_file)
+    hmm_df = pd.read_csv(hmm_file)
+    
+    filtered_hmm_proteins = hmm_df[hmm_df['E-value'] <= e_threshold]['uniprot_id']
+    psiblast_proteins = set(psiblast_df['uniprot_id'])
+    hmm_proteins = set(filtered_hmm_proteins)
+    
+    return list(psiblast_proteins.union(hmm_proteins))
+
+# -----------------------------------------------------------------------------
+# Step 2: Fetch GO Annotations from UniProt
 # -----------------------------------------------------------------------------
 
 def fetch_go_annotations(protein_id):
@@ -24,24 +42,20 @@ def fetch_go_annotations(protein_id):
         for db_ref in root.findall(".//ns:dbReference[@type='GO']", namespaces):
             go_id = db_ref.attrib.get('id')
             term = db_ref.find("ns:property[@type='term']", namespaces)
+            category = db_ref.find("ns:property[@type='category']", namespaces)
             if go_id and term is not None:
-                go_terms.append({"GO_ID": go_id, "Term": term.attrib['value']})
+                go_terms.append({
+                    "GO_ID": go_id,
+                    "Term": term.attrib['value'],
+                    "Category": category.attrib['value'] if category is not None else "Unknown"
+                })
         return go_terms
     except requests.exceptions.RequestException as e:
         print(f"Error fetching GO annotations for {protein_id}: {e}")
         return []
 
 # -----------------------------------------------------------------------------
-# Step 2: Read Protein IDs from a File
-# -----------------------------------------------------------------------------
-
-def read_protein_ids(file_path):
-    """Read protein IDs from a text file."""
-    with open(file_path, "r") as f:
-        return [line.strip() for line in f.readlines()]
-
-# -----------------------------------------------------------------------------
-# Step 3: Fetch Background GO Annotations
+# Step 3: Fetch Random Proteins
 # -----------------------------------------------------------------------------
 
 def fetch_random_proteins(batch_size=100, total_proteins=500):
@@ -51,22 +65,24 @@ def fetch_random_proteins(batch_size=100, total_proteins=500):
         response = requests.get(url)
         response.raise_for_status()
         all_proteins = response.text.splitlines()
-        selected_proteins = random.sample(all_proteins, total_proteins)
+        selected_proteins = random.sample(all_proteins, min(total_proteins, len(all_proteins)))
         return [selected_proteins[i:i + batch_size] for i in range(0, len(selected_proteins), batch_size)]
     except requests.exceptions.RequestException as e:
         print(f"Error fetching random proteins: {e}")
         return []
 
-def fetch_background_annotations(protein_batches):
-    """Fetch GO annotations for batches of proteins."""
-    background_annotations = {}
-    for batch in protein_batches:
-        for pid in batch:
-            background_annotations[pid] = fetch_go_annotations(pid)
-    return background_annotations
+# -----------------------------------------------------------------------------
+# Step 4: Load GO Ontology
+# -----------------------------------------------------------------------------
+
+def load_go_ontology():
+    """Load the GO ontology from OBO file."""
+    url = "http://purl.obolibrary.org/obo/go/go-basic.obo"
+    graph = obonet.read_obo(url)
+    return graph
 
 # -----------------------------------------------------------------------------
-# Step 4: Flatten Annotations for Analysis
+# Step 5: Flatten Annotations for Analysis
 # -----------------------------------------------------------------------------
 
 def flatten_annotations(annotation_dict):
@@ -77,7 +93,7 @@ def flatten_annotations(annotation_dict):
     return flat_terms
 
 # -----------------------------------------------------------------------------
-# Step 5: Enrichment Analysis
+# Step 6: Enrichment Analysis
 # -----------------------------------------------------------------------------
 
 def calculate_enrichment(go_term, family_terms, background_terms):
@@ -93,10 +109,10 @@ def calculate_enrichment(go_term, family_terms, background_terms):
     return p_value
 
 # -----------------------------------------------------------------------------
-# Step 6: Visualize Enriched Terms
+# Step 7: Visualize Enriched Terms
 # -----------------------------------------------------------------------------
 
-def plot_wordcloud(enrichment_results, annotations, output_file="enriched_terms_wordcloud.png"):
+def plot_wordcloud(enrichment_results, annotations):
     """Generate and save a word cloud of enriched GO terms."""
     term_names = {a["GO_ID"]: a["Term"] for ann_list in annotations.values() for a in ann_list}
     enriched_with_names = {term_names[go_id]: -np.log10(p) for go_id, p in enrichment_results.items() if go_id in term_names}
@@ -105,44 +121,143 @@ def plot_wordcloud(enrichment_results, annotations, output_file="enriched_terms_
         print("No enriched terms found. Word cloud will not be generated.")
         return
 
-    wordcloud = WordCloud(width=800, height=400, background_color="white").generate_from_frequencies(enriched_with_names)
-    wordcloud.to_file(output_file)
-    print(f"Word cloud saved as {output_file}")
+    wordcloud = WordCloud(width=1000, height=600, background_color="white", colormap="viridis").generate_from_frequencies(enriched_with_names)
+    wordcloud.to_file("enriched_terms_wordcloud.png")
+    print("Word cloud saved as enriched_terms_wordcloud.png")
 
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(12, 6))
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
-    plt.title("Enriched GO Terms")
+    plt.title("Word Cloud of Enriched GO Terms")
     plt.tight_layout()
     plt.show()
+
+def plot_branch_enrichment(enrichment_results, go_graph):
+    """Plot GO branch enrichment."""
+    branch_scores = {}
+    for go_id, p_value in enrichment_results.items():
+        try:
+            parents = nx.ancestors(go_graph, go_id)
+            for parent in parents:
+                if parent not in branch_scores:
+                    branch_scores[parent] = []
+                branch_scores[parent].append(p_value)
+        except nx.NetworkXError:
+            continue
+
+    significant_branches = {branch: np.mean(scores)
+                            for branch, scores in branch_scores.items() if len(scores) >= 3}
+
+    # Limit to top 50 branches by score
+    sorted_branches = sorted(significant_branches.items(), key=lambda x: x[1], reverse=True)[:50]
+    branches, scores = zip(*sorted_branches)
+
+    plt.figure(figsize=(14, 10))
+    plt.barh(range(len(branches)), scores, color="steelblue")
+    plt.yticks(range(len(branches)), [go_graph.nodes[branch]['name'] for branch in branches], fontsize=8)
+    plt.xlabel('Mean p-value')
+    plt.title('Top 50 GO Branch Enrichments')
+    plt.tight_layout()
+    plt.savefig("go_enrichment_branches.png", dpi=300, bbox_inches="tight")
+    plt.legend(["Top 50 Branch Enrichments"], loc="lower right")
+    print("GO branch enrichment plot saved as go_enrichment_branches.png")
+
+# -----------------------------------------------------------------------------
+# Step 8: Write Summary and Results to File
+# -----------------------------------------------------------------------------
+
+def write_summary_and_results(enrichment_results, family_annotations, go_graph):
+    """Write a summary and detailed results to a text file."""
+    with open("enrichment_results.txt", "w") as f:
+        # Write summary
+        f.write("SUMMARY\n")
+        f.write("========\n")
+        f.write(f"Number of enriched GO terms: {len(enrichment_results)}\n")
+        f.write(f"Top enriched term: {max(enrichment_results, key=enrichment_results.get, default='None')}\n")
+        f.write("\n\n")
+
+        # Write detailed results
+        f.write("DETAILED RESULTS\n")
+        f.write("================\n")
+        for go_id, p_value in enrichment_results.items():
+            term_name = next((a["Term"] for ann_list in family_annotations.values() 
+                             for a in ann_list if a["GO_ID"] == go_id), go_id)
+            f.write(f"{go_id}: {term_name} (p-value: {p_value:.2e})\n")
+
+        # Write branch scores
+        f.write("\n\nSIGNIFICANT GO BRANCHES\n")
+        f.write("========================\n")
+        branch_scores = {}
+        for go_id, p_value in enrichment_results.items():
+            try:
+                parents = nx.ancestors(go_graph, go_id)
+                for parent in parents:
+                    if parent not in branch_scores:
+                        branch_scores[parent] = []
+                    branch_scores[parent].append(p_value)
+            except nx.NetworkXError:
+                continue
+
+        significant_branches = {branch: np.mean(scores) 
+                                for branch, scores in branch_scores.items() if len(scores) >= 3}
+        for branch, score in sorted(significant_branches.items(), key=lambda x: x[1]):
+            branch_name = go_graph.nodes[branch].get('name', branch)
+            f.write(f"{branch}: {branch_name} (mean p-value: {score:.2e})\n")
 
 # -----------------------------------------------------------------------------
 # Main Script
 # -----------------------------------------------------------------------------
 
 def main():
-    # Load family protein IDs
-    protein_ids = read_protein_ids("hmm_cleaned_protein_ids.txt")
-    family_annotations = {pid: fetch_go_annotations(pid) for pid in protein_ids}
+    print("Loading GO ontology...")
+    go_graph = load_go_ontology()
 
-    # Fetch background annotations in batches
-    protein_batches = fetch_random_proteins(batch_size=50, total_proteins=217)
-    background_annotations = fetch_background_annotations(protein_batches)
+    psiblast_file = "psiblast_parsed.csv"
+    hmm_file = "hmmsearch_output.csv"
+    protein_ids = load_protein_ids(psiblast_file, hmm_file)
 
-    # Flatten annotations for Fisher's test
+    print("Fetching GO annotations...")
+    family_annotations = {}
+    for pid in tqdm(protein_ids, desc="Fetching GO annotations"):
+        family_annotations[pid] = fetch_go_annotations(pid)
+
+    print("Fetching background annotations...")
+    background_annotations = {}
+    background_batches = fetch_random_proteins(batch_size=50, total_proteins=500)
+    for batch in tqdm(background_batches, desc="Processing background proteins"):
+        for pid in batch:
+            background_annotations[pid] = fetch_go_annotations(pid)
+
+    print("Calculating enrichment...")
     family_terms = flatten_annotations(family_annotations)
     background_terms = flatten_annotations(background_annotations)
 
-    # Perform enrichment analysis
     unique_go_terms = set(family_terms)
     enrichment_results = {}
+    pvalues = []
+    terms = []
+
     for term in unique_go_terms:
-        p_value = calculate_enrichment(term, family_terms, background_terms)
-        if p_value < 0.05:  # Adjust threshold if needed
+        _, p_value = fisher_exact([
+            [family_terms.count(term), len(family_terms) - family_terms.count(term)],
+            [background_terms.count(term), len(background_terms) - background_terms.count(term)]
+        ], alternative='greater')
+
+        pvalues.append(p_value)
+        terms.append(term)
+
+    rejected, p_corrected, _, _ = multipletests(pvalues, method='fdr_bh')
+
+    for term, p_value, significant in zip(terms, p_corrected, rejected):
+        if significant:
             enrichment_results[term] = p_value
 
-    # Generate and save the word cloud
+    print("Generating visualizations...")
     plot_wordcloud(enrichment_results, family_annotations)
+    plot_branch_enrichment(enrichment_results, go_graph)
+
+    print("Writing results to file...")
+    write_summary_and_results(enrichment_results, family_annotations, go_graph)
 
 if __name__ == "__main__":
     main()
