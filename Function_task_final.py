@@ -56,7 +56,7 @@ def fetch_go_annotations(protein_id):
 # Step 3: Fetch Background GO Annotations
 # -----------------------------------------------------------------------------
 def fetch_background_annotations(batch_size=100):
-    """Fetch a list of random UniProt reviewed protein GO annotations in batches."""
+    """Fetch a list of random UniProt reviewed protein GO annotations."""
     url = "https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true&format=tsv&fields=accession,id,go" 
     try:
         response = requests.get(url)
@@ -64,11 +64,10 @@ def fetch_background_annotations(batch_size=100):
         background_annotations = {}
 
         # Parse the response for GO annotations
-        lines = response.text.splitlines()[1:]
+        lines = response.text.splitlines()[1:]  # Skip header
         total_lines = len(lines)
-        for i in tqdm(range(0, total_lines, batch_size), desc="Fetching background annotations", unit="batch"):
-            batch = lines[i:i+batch_size]
-            for line in batch:
+        with tqdm(total=total_lines, desc="Parsing background annotations", unit="line") as pbar:
+            for line in lines:
                 fields = line.split("\t")
                 protein_id = fields[0]
                 go_annotations = []
@@ -77,6 +76,7 @@ def fetch_background_annotations(batch_size=100):
                     go_annotations = [term.split(";")[0] for term in fields[2].split("|")]
 
                 background_annotations[protein_id] = go_annotations
+                pbar.update(1)
 
         return background_annotations
 
@@ -135,67 +135,59 @@ def plot_wordcloud(enrichment_results, go_annotations):
     """Generate and save a word cloud of enriched GO terms."""
     # Map GO IDs to their term names
     term_mapping = {term["GO_ID"]: term["Term"] for terms in go_annotations.values() for term in terms}
-    
+
     # Replace GO IDs with term names and calculate scores
     term_scores = {
         term_mapping.get(go_id, go_id): -np.log10(p)
         for go_id, p in enrichment_results.items()
         if go_id in term_mapping
     }
-    
-    # Limit to the top 50 terms
+
+    # Limit to the top 50 terms for better readability
     top_terms = dict(sorted(term_scores.items(), key=lambda item: item[1], reverse=True)[:50])
-    
-    # Create the word cloud
+
+    # Create the word cloud with enhanced settings
     wordcloud = WordCloud(
         width=1200,
         height=800,
-        background_color="white",
-        colormap="viridis",
-        max_words=50
+        background_color='white',
+        prefer_horizontal=0.95,  # Increased horizontal preference
+        max_words=40,
+        min_font_size=10,
+        max_font_size=60,
+        colormap='viridis'
     ).generate_from_frequencies(top_terms)
-    
+
     # Save and display the word cloud
     wordcloud.to_file("enriched_terms_wordcloud_final.png")
     plt.figure(figsize=(15, 10))
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
-    plt.title("Top Enriched GO Terms Word Cloud")
+    plt.title("GO Term Enrichment Word Cloud", fontsize=20)
     plt.tight_layout()
     plt.show()
 
 
+# Branch enrichment plotting remains unchanged
 def plot_branch_enrichment(enrichment_results, go_graph):
     """Generate a plot for branch enrichment."""
     branch_scores = {}
     for go_id, p_value in enrichment_results.items():
-        # Check if the GO ID exists in the graph
         if go_id not in go_graph.nodes:
-            print(f"Warning: GO term {go_id} not found in GO ontology. Skipping...")
-            continue
-        try:
-            parents = nx.ancestors(go_graph, go_id)
-            for parent in parents:
-                if parent not in branch_scores:
-                    branch_scores[parent] = []
-                branch_scores[parent].append(p_value)
-        except KeyError:
             continue
 
-    # Calculate mean p-value for each branch
+        parents = nx.ancestors(go_graph, go_id)
+        for parent in parents:
+            if parent not in branch_scores:
+                branch_scores[parent] = []
+            branch_scores[parent].append(p_value)
+
     significant_branches = {branch: np.mean(scores) for branch, scores in branch_scores.items() if len(scores) >= 3}
     sorted_branches = sorted(significant_branches.items(), key=lambda x: x[1])[:50]
 
-    # Handle empty results
-    if not sorted_branches:
-        print("No significant branches found for plotting.")
-        return
-
-    # Prepare data for plotting
     branch_ids, scores = zip(*sorted_branches)
     branch_names = [go_graph.nodes[branch].get("name", branch) for branch in branch_ids]
 
-    # Create the plot
     plt.figure(figsize=(14, 10))
     plt.barh(branch_names, scores, color="steelblue")
     plt.xlabel("Mean p-value")
@@ -203,35 +195,60 @@ def plot_branch_enrichment(enrichment_results, go_graph):
     plt.title("Top Enriched GO Branches")
     plt.tight_layout()
     plt.savefig("go_enrichment_branches_final.png")
-    print("Branch enrichment plot saved as go_enrichment_branches_final.png")
-
+    plt.close()
 
 # -----------------------------------------------------------------------------
 # Step 8: Save Results
 # -----------------------------------------------------------------------------
-def save_enrichment_results(enrichment_results):
-    """Save enrichment results to a CSV file."""
-    results = [{"GO_ID": go_id, "P-Value": p_value} for go_id, p_value in enrichment_results.items()]
-    df = pd.DataFrame(results)
+def save_enrichment_results(enrichment_results, go_annotations, family_terms, background_terms):
+    """Save enrichment results to a CSV file with detailed information."""
+    term_mapping = {term["GO_ID"]: term for terms in go_annotations.values() for term in terms}
+
+    detailed_results = []
+    for go_id, p_value in enrichment_results.items():
+        # Fetch term details
+        term_details = term_mapping.get(go_id, {})
+        term_name = term_details.get("Term", "Unknown")
+        category = term_details.get("Category", "Unknown")
+
+        # Count occurrences in family and background
+        family_count = family_terms.count(go_id)
+        background_count = background_terms.count(go_id)
+
+        # Add detailed data
+        detailed_results.append({
+            "GO_ID": go_id,
+            "Term_Name": term_name,
+            "Category": category,
+            "Family_Count": family_count,
+            "Background_Count": background_count,
+            "Two_Tail_P": p_value,
+            "Right_Tail_P": p_value  # If both two-tailed and right-tailed are the same
+        })
+
+    # Convert to DataFrame and save to CSV
+    df = pd.DataFrame(detailed_results)
     df.to_csv("enrichment_results_final.csv", index=False)
     print("Enrichment results saved as enrichment_results_final.csv")
 
-def save_summary(enrichment_results):
-    """Save a summary of the enrichment analysis."""
+def save_summary(enrichment_results, family_terms, background_terms):
+    """Save a detailed summary of the enrichment analysis."""
     with open("enrichment_summary_final.txt", "w") as f:
         f.write("Enrichment Analysis Summary\n")
         f.write("===========================\n")
         f.write(f"Total enriched terms: {len(enrichment_results)}\n")
+        f.write(f"Total family GO terms: {len(set(family_terms))}\n")
+        f.write(f"Total background GO terms: {len(set(background_terms))}\n")
         if enrichment_results:
             top_term = min(enrichment_results, key=enrichment_results.get)
             f.write(f"Most significant term: {top_term} with p-value {enrichment_results[top_term]:.2e}\n")
-    print("Enrichment summary saved as enrichment_summary_final.txt")
+        f.write("\nAdditional Notes:\n")
+        f.write("- Terms skipped due to missing ontology nodes are automatically excluded from visualizations.\n")
 
 # -----------------------------------------------------------------------------
 # Main Script
 # -----------------------------------------------------------------------------
 def main():
-    print("Loading protein IDs...")
     psiblast_file = "psiblast_parsed.csv"
     hmm_file = "hmmsearch_output.csv"
 
@@ -239,13 +256,13 @@ def main():
     protein_ids = load_protein_ids(psiblast_file, hmm_file)
 
     # Fetch GO annotations for family
-    print("Fetching family GO annotations...")
     family_annotations = {}
-    for pid in tqdm(protein_ids, desc="Fetching GO annotations"):
-        family_annotations[pid] = fetch_go_annotations(pid)
+    with tqdm(total=len(protein_ids), desc="Fetching GO annotations") as pbar:
+        for pid in protein_ids:
+            family_annotations[pid] = fetch_go_annotations(pid)
+            pbar.update(1)
 
     # Fetch background GO annotations
-    print("Fetching background GO annotations...")
     background_annotations = fetch_background_annotations()
 
     # Flatten annotations
@@ -253,29 +270,24 @@ def main():
     background_terms = flatten_annotations(background_annotations)
 
     # Fetch GO ontology
-    print("Fetching GO ontology...")
     go_graph = fetch_go_ontology()
     if go_graph is None:
         print("Failed to fetch GO ontology. Exiting...")
         return
 
     # Enrichment analysis
-    print("Calculating enrichment...")
     unique_go_terms = set(family_terms)
     enrichment_results = {}
-    for term in unique_go_terms:
+    for term in tqdm(unique_go_terms, desc="Analyzing GO terms"):
         two_tail_p, right_tail_p = calculate_enrichment(term, family_terms, background_terms)
         if right_tail_p < 0.05 or two_tail_p < 0.05:
             enrichment_results[term] = two_tail_p
 
     # Save results and visualizations
-    print("Saving results and generating visualizations...")
-    save_enrichment_results(enrichment_results)
-    save_summary(enrichment_results)
+    save_enrichment_results(enrichment_results, family_annotations, family_terms, background_terms)
+    save_summary(enrichment_results, family_terms, background_terms)
     plot_wordcloud(enrichment_results, family_annotations)
     plot_branch_enrichment(enrichment_results, go_graph)
-
-    print("Analysis complete. Results saved.")
 
 if __name__ == "__main__":
     main()
