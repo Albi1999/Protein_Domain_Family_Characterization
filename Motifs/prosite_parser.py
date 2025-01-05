@@ -3,9 +3,21 @@
 # also converts patterns to be compatible with python re module
 
 
+
+# TODO : for the pattern of PS00012 we got by parsing
+# [DEQGSTALMKRH][LIVMFYSTAC][GNQ][LIVMFYAG][DNEKHS]S[LIVMST]
+# [ADEGHIKLMNQRSTVW][STAGCPQLIVMF][LIVMATN][DENQGTAKRHLM]
+# [LIVMWSTA][LIVGSTACR][ACDEFGHKMNQRSTVW][ACDEFGHIKLMNPQRSTW][LIVMFA]
+# but the actual is 
+#[DEQGSTALMKRH]-[LIVMFYSTAC]-[GNQ]-[LIVMFYAG]-[DNEKHS]-S-[LIVMST]-{PCFY}-
+# [STAGCPQLIVMF]-[LIVMATN]-[DENQGTAKRHLM]-[LIVMWSTA]-[LIVGSTACR]-{LPIY}-
+# {VY}-[LIVMFA]
+# it removes the {} brackets (for example {PCFY} and doesn't add them to the regex / changes it
+# into the correct regex format, we need to fix that
+
 import re
 
-aaList = ["A",
+aaList =  ["A",
            "C",
            "D",
            "E",
@@ -32,9 +44,15 @@ outputFile = open('prosite_preprocessed.txt','a')
 currentDict = {}
 
 #currentPA holds the prosite pattern from dat file; if it spans more than one line, read multiple files and concatenate 
-#pattern from consecutive ines with PA tag in the beginning of the line
+#pattern from consecutive lines with PA tag in the beginning of the line
 
 #when a new line with AC tag is read, currentPA from previous accession is cleared
+# AC is the row accession for the new protein (i.e. in that row accession of protein such as PS10203)
+
+
+# PA is the row where the pattern is found 
+
+
 
 for line in prositeFile:
     line = line.strip()
@@ -44,21 +62,26 @@ for line in prositeFile:
             currentDict[currentAC] = []
             if 'currentPA' in globals():
                 del currentPA
-    elif re.match("PA   ", line):
-        currentPA = line.split()[1]
-        if lastLineTag == "PA   ":
-            currentPA =  lastLinePA + currentPA
+    elif re.match("PA   ", line): 
+        currentPA = line.split()[1] # Gets the current Pattern
+        if currentPA[-1] == ".":
+            currentPA = currentPA[:-1]
+        if lastLineTag == "PA   ": # check if in the last line thre was also a PA
+            currentPA =  lastLinePA + currentPA # if yes, concatenate the patterns (both Rows PA)
+            # since we iterate over all lines in the main loop, we catch all PA rows and concatenate everything with this code
     else:
         if not 'currentPA' in globals():
             lastLineTag = line[:5]
-            continue
-        if currentPA[-1] == ".":
-            currentPA = currentPA[:-1]
+            continue # skip the current loop (i.e. go until we find again AC/PA)
+
         
+        # TODO : for me this is just a bit confusing, shouldn't this code happen after the whole PA was found ?
+        # TODO : because right now it is happening in the else case ? 
         currentPAList = currentPA.split("-")
         refinedCurrentPAList = []
 
         for n in range(len(currentPAList)):
+        # Redefine the Pattern such that it works with Python Regex
 
             #change to range
 
