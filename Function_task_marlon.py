@@ -8,16 +8,20 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
-import random
-import obonet
-import networkx as nx
 from statsmodels.stats.multitest import multipletests
 from collections import defaultdict
+from goatools import obo_parser
 
 
 
-# Step 1: Load Protein IDs
+
+""" FUNCTION TASK """
+
+
+
 # TODO : we basically did this above already for taxonomy task and just here neatly written into a function, so we could maybe just do it once in the whole code later on
+
+# PRE-STEP 1 : Load Protein IDs of Family 
 def load_protein_ids(psiblast_file, hmm_file, e_threshold=0.001):
     """Load protein IDs from PSI-BLAST and HMM search results."""
     psiblast_df = pd.read_csv(psiblast_file)
@@ -29,7 +33,7 @@ def load_protein_ids(psiblast_file, hmm_file, e_threshold=0.001):
     
     return list(psiblast_proteins.union(hmm_proteins))
 
-
+# STEP 1 : For each Protein ID in our family, fetch its GO annotation 
 def fetch_go_annotations(protein_id):
     """
     Fetch and categorize GO annotations for a given protein ID from the UniProt API.
@@ -108,7 +112,7 @@ def fetch_go_annotations(protein_id):
             }
         }
     
-
+# STEP 2 : GO ANNOTATIONS OF SWISSPROT .XML FILE 
 # Let's add some debugging to help understand what's happening
 # here we see that the big .xml file has the same structure as the small ones 
 # we already analyzed ; thus,we can use the same parsing structure, but this time directly
@@ -167,7 +171,7 @@ def parse_swissprot_go_terms(swissprot_xml_path, family_proteins):
                 else:
                     # Process GO terms for non-family proteins
                     for db_ref in elem.findall(".//ns:dbReference[@type='GO']", namespaces):
-                        go_id = db_ref.attrib.get('id')
+                        go_id = db_ref.attrib.get('id') # the GO id 
                         if go_id:
                             go_term_counts[go_id] += 1
                     total_proteins += 1
@@ -191,7 +195,8 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
     results = []
     
     for go_id, my_count in my_go_counts.items():
-        # Get count from SwissProt
+        # Get count from SwissProt (i.e. how often was this GO id found in all of SwissProt with exception of
+        # the Proteins found in the family?)
         swissprot_count = swissprot_go_counts.get(go_id, 0) # if isn't found, sets to count = 0 automatically 
 
         # Create the 2x2 contingency table for Fisher's exact test
@@ -203,13 +208,12 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
         # Contingency table calculations:
         a = my_count  # Proteins with this GO term in family
         
-        # For b, we need to make sure we don't subtract more than what's in SwissProt
-        b = swissprot_count  # Proteins with GO term in rest of SwissProt
+    
+        b = swissprot_count  # Proteins with GO term in SwissProt - the ones in Family
         
         c = my_total_proteins - a  # Proteins without GO term in family
-        
-        # For d, ensure we don't get negative values by using max
-        d = swissprot_total_proteins - b
+   
+        d = swissprot_total_proteins - b # Proteins that don't have the GO term in SwissProt - the ones in Family
         
         # Verify all values are non-negative before creating contingency table
         if all(x >= 0 for x in [a, b, c, d]):
@@ -236,9 +240,24 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
             _, pvalue_greater = fisher_exact(contingency_table, alternative='greater')
             _, pvalue_less = fisher_exact(contingency_table, alternative='less')
             
-            # Calculate fold enrichment safely
+          
             my_proportion = my_count / my_total_proteins if my_total_proteins > 0 else 0
             swissprot_proportion = swissprot_count / swissprot_total_proteins if swissprot_total_proteins > 0 else 0
+            # Fold Enrichment
+            # TODO : see if the argumentation in the next comment makes sense (send email to prof)
+            if swissprot_count == 0: # When the swissprot count is 0, it means that : 
+                                     # When collecting the GO terms of SwissProt, we skipped over the proteins in our family
+                                     # Thus, if no protein in SwissProt has this GO term, ONLY the protein in the family itself 
+                                     # has that GO term (compared to ALL of SwissProt), thus in the WordCloud later on
+                                     # we want to especially show the term of this GO id and will thus give it
+                                     # 'inf' amount (infinite) for now
+                if my_proportion > 0:
+                    fold_enrichment = float('inf')
+                else:
+                    fold_enrichment = 0
+            else:
+                fold_enrichment = my_proportion/swissprot_proportion
+       
      
             
             results.append({
@@ -246,11 +265,14 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
                 'Count_Dataset': my_count,
                 'Count_SwissProt': swissprot_count,
                 'Percentage_Dataset': round(my_proportion * 100, 2),
-                'Percentage_SwissProt': round(swissprot_proportion * 100, 2),
+                'Percentage_SwissProt': round(swissprot_proportion * 100, 10),
+                'Fold_Enrichment': round(fold_enrichment,2),
                 'P_Value_Two_Tail': pvalue_two_tail,
                 'P_Value_Greater': pvalue_greater,
                 'P_Value_Less': pvalue_less
             })
+    
+
     
     # Convert to DataFrame and sort by p-value
     df_results = pd.DataFrame(results)
@@ -262,10 +284,7 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
     return df_results
 
 
-
-
-# MARLON
-# Helper function for the enrichment task
+# HELPER FUNCTION FOR STEP 2
 def extract_go_terms_for_enrichment(protein_go_data):
     """
     Extract GO term counts from the protein annotation data.
@@ -297,12 +316,12 @@ def extract_go_terms_for_enrichment(protein_go_data):
     return go_term_counts, total_proteins
 
 
-# MARLON
-# Helper function to get from GO IDs to their actual terms for word cloud
 
+# HELPER FUNCTION FOR STEP 3
 def create_go_id_to_term_mapping(family_data):
     """
     Creates a dictionary mapping GO IDs to their terms from the family data.
+    Needed to create the word cloud based on the terms and not GO ID's
     
     Args:
         family_data (dict): Your dictionary containing protein annotations
@@ -323,39 +342,12 @@ def create_go_id_to_term_mapping(family_data):
 
 
 
-# MARLON
-# Enrichment Cloud
-
-import pandas as pd
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-import seaborn as sns
-
-# Calculate fold enrichment safely (we have 0 values in SwissProt Percentages)
-def calculate_safe_fold_enrichment(row):
-    if row['Percentage_SwissProt'] == 0:
-        if row['Percentage_Dataset'] > 0:
-            return float('inf')  # Indicates infinite enrichment
-        return 0
-    return row['Percentage_Dataset'] / row['Percentage_SwissProt']
-
-
-# For the word cloud, we need finite values
-def get_word_cloud_weight(fold_enrichment):
-    if np.isinf(fold_enrichment):
-        return 1000  # Use a large but finite number for infinite enrichment
-    return fold_enrichment
 
 
 
-# MARLON 
-# Hierarchical Structure
 
-import pandas as pd
-import networkx as nx
-from goatools import obo_parser
-import matplotlib.pyplot as plt
 
+# STEP 4 
 def analyze_go_hierarchy():
     # First, we downloaded the go.obo file so we can parse it 
     go_obo = obo_parser.GODag('go.obo')
@@ -433,14 +425,14 @@ def analyze_go_hierarchy():
     branches_df.to_csv('enriched_branches.csv', index=False)
 
 
-#MARLON 
+
 def main():
     psiblast_file = "psiblast_parsed.csv"
     hmm_file = "hmmsearch_output.csv"
     protein_ids = load_protein_ids(psiblast_file, hmm_file)
 
 
-    
+    ######## STEP 1 ###########
     print("Fetching GO annotations...")
     family_annotations = {}
     for pid in tqdm(protein_ids, desc="Fetching GO annotations"):
@@ -454,7 +446,11 @@ def main():
     print(go_counts_family)
     print(num_proteins_family)
 
+       ######## STEP 1 END ###########
 
+    # This step we already done and the files can be found here in the project (enrichment_results.csv)
+    # Rerunning takes some time 
+       ######## STEP 2 ###########
     """
     go_counts_swissprot, num_proteins_swissprot = parse_swissprot_go_terms("uniprot_sprot.xml", protein_ids)
 
@@ -466,7 +462,9 @@ def main():
                                             go_counts_swissprot, num_proteins_swissprot)
     """
 
+       ######## STEP 2 END ###########
 
+       ######## STEP 3 ###########
     # Read the enrichment results
     df = pd.read_csv("enrichment_results.csv")
 
@@ -474,14 +472,13 @@ def main():
     go_id_to_term = create_go_id_to_term_mapping(family_annotations)
 
 
-    # Filter for significantly enriched terms
+    # Filter for significantly enriched terms based on two tail and right tail p-values
     enriched_terms = df[
     (df['P_Value_Two_Tail'] < 0.05) &
     (df['P_Value_Greater'] < 0.05)
     ]
 
 
-    enriched_terms['Fold_Enrichment'] = enriched_terms.apply(calculate_safe_fold_enrichment, axis=1)
 
     # Create word frequencies using the actual GO terms instead of IDs
     word_frequencies = {}
@@ -490,8 +487,10 @@ def main():
         if go_id in go_id_to_term:  # Make sure we have the term for this ID
             term = go_id_to_term[go_id]
             # Use fold enrichment as weight, handling infinite values
-            weight = 5000 if np.isinf(row['Fold_Enrichment']) else row['Fold_Enrichment'] # TODO : there are some already that are higher than 1000 without the 0 problem
-            # TODO : so I don't know if we should set this weight higher than the highest that doesn't have the 0 division problem, because else it might show a wrong image...
+            weight = 60000 if np.isinf(row['Fold_Enrichment']) else row['Fold_Enrichment'] 
+            # TODO : we set to 50000 because we looked into the .csv and the highest Fold_Enrichment that 
+            # did not have any
+
             word_frequencies[term] = weight
 
     # Create and display the word cloud
@@ -519,6 +518,14 @@ def main():
     for term, weight in sorted_terms[:10]:
         print(f"\nTerm: {term}")
         print(f"Weight in word cloud: {weight:.2f}")
+
+    
+       ######## STEP 3 END ###########
+
+
+    ######## STEP 4 ###########
+    analyze_go_hierarchy()
+    ######## STEP 4 END ###########
 
 
 if __name__ == "__main__":
