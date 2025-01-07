@@ -56,7 +56,7 @@ def fetch_go_annotations(protein_id):
         response.raise_for_status()
         
         # Initialize our data structures
-        go_terms = []  # Original format
+    
         categorized_terms = {
             'molecular_function': [],
             'biological_process': [],
@@ -216,7 +216,7 @@ def calculate_go_enrichment(my_go_counts, my_total_proteins,
         d = swissprot_total_proteins - b # Proteins that don't have the GO term in SwissProt - the ones in Family
         
         # Verify all values are non-negative before creating contingency table
-        if all(x >= 0 for x in [a, b, c, d]):
+        if all(x >= 0 for x in [a, b, c, d]): # TODO : remove 
             contingency_table = [[a, b], [c, d]]
             
             # Perform Fisher's exact test
@@ -318,6 +318,7 @@ def extract_go_terms_for_enrichment(protein_go_data):
 
 
 # HELPER FUNCTION FOR STEP 3
+# TODO : easier ? 
 def create_go_id_to_term_mapping(family_data):
     """
     Creates a dictionary mapping GO IDs to their terms from the family data.
@@ -411,7 +412,7 @@ def analyze_go_hierarchy():
     branch_data = []
 
     # Convert the branch information into a format suitable for a DataFrame
-    for go_id, info in sorted_branches[:20]:  # Top 10 branches
+    for go_id, info in sorted_branches[:20]:  # Top 20 branches
         branch_data.append({
             'GO_ID': go_id,
             'Branch_Name': info['term_name'],
@@ -488,7 +489,7 @@ def main():
             term = go_id_to_term[go_id]
             # Use fold enrichment as weight, handling infinite values
             weight = 60000 if np.isinf(row['Fold_Enrichment']) else row['Fold_Enrichment'] 
-            # TODO : we set to 50000 because we looked into the .csv and the highest Fold_Enrichment that 
+            # TODO : we set to 60000 because we looked into the .csv and the highest Fold_Enrichment that 
             # did not have any
 
             word_frequencies[term] = weight
