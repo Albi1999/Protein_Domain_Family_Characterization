@@ -1,9 +1,0 @@
-Enrichment Analysis Summary
-===========================
-Total enriched terms: 131
-Total family GO terms: 131
-Total background GO terms: 4351
-Most significant term: GO:0005615 with p-value 6.39e-143
-
-Additional Notes:
-- Terms skipped due to missing ontology nodes are automatically excluded from visualizations.
