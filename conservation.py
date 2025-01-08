@@ -103,7 +103,7 @@ class ConservationAnalyzer:
     # much higher length did not work, but maybe we should write an email and ask ; nevertheless, we can first try some evaluation based on that PSSM and see our scores
 
     # TODO : diff gap_thresh/conservation threshold for different number of columns in output (OPTIMIZE)
-    def analyze_columns(self, gap_threshold=0.95, conservation_threshold=0.9):
+    def analyze_columns(self, gap_threshold=0.90, conservation_threshold=0.9):
         """
         Analyze all columns and return comprehensive metrics
         Returns DataFrame with various conservation metrics for each position
@@ -189,7 +189,7 @@ def remove_columns_from_alignment(input_file, output_file, columns_to_remove, fo
 # Example usage:
 if __name__ == "__main__":
     # Initialize analyzer 
-    analyzer = ConservationAnalyzer("UNIPROTKB_INITIAL.fasta")
+    analyzer = ConservationAnalyzer("ClustalOmegaUniProtAlignment.fasta")
     
     # Get comprehensive analysis
     analysis = analyzer.analyze_columns()
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     
     # Remove columns and save new alignment
     new_alignment = remove_columns_from_alignment(
-        "UNIPROTKB_INITIAL.fasta",
+        "ClustalOmegaUniProtAlignment.fasta",
         "trimmed_alignment.fasta",
         columns_to_remove
     )
