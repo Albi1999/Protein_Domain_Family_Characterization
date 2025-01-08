@@ -1,8 +1,8 @@
-"""Used for rewriting the hmm_output and psiblast_output files such that they match the .csv structure of pfam_domain_positions.
+"""Used for rewriting psiblast_output files such that they match the .csv structure of pfam_domain_positions.
 This makes it easier to compare the .csv files directly (also without any code), so we can see if the results of metrics make sense
 and how good our model is generally (based on e-scores and how much similar matches of proteins are found atleast)"""
 
-# TODO : implement for hmm, but first we need to understand how we deal with it having multiple domain hits
+
 import csv
 import re 
 
