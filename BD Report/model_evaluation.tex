@@ -1,0 +1,50 @@
+% !TEX root = template.tex
+
+\section{Model Evaluation}
+
+To generate predictions, we used HMM-SEARCH~\cite{hmmer} and PSI-BLAST~\cite{psiblast} with default parameters. Both searches were performed against the manually curated SwissProt database (release 29.11.2024)~\cite{swissprot}, resulting in predicted proteins and domain positions. To generate the ground truth, we collected all the proteins reviewed in SwissProt annotated with the given Pfam domain~\cite{pfam} utilizing the InterPro API~\cite{interpro}. Then, both models were compared to the ground truth at the protein and residue level. The $82$ ground truth proteins were found by both models (Table~\ref{tab:confusion}), and using a multitude of metrics for evaluation purposes, we found both models to be highly accurate at the residue level, with the PSSM model slightly outperforming the HMM model (Table~\ref{tab:metrics}).
+
+
+% Confusion Matrices Table
+\begin{table}[h!]
+    \centering
+    \small
+    \caption{Confusion Matrices for PSI-BLAST and HMM at Protein and Residue Levels}
+    \label{tab:confusion}
+    \begin{tabular}{llrrrr}
+        \toprule
+        \textbf{Level} & \textbf{Method} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} \\
+        \midrule
+        \multirow{2}{*}{Protein} 
+        & PSI-BLAST & 82 & 1 & 0 & 0 \\
+        & HMM & 82 & 1 & 0 & 0 \\
+        \midrule
+        \multirow{2}{*}{Residue} 
+        & PSI-BLAST & 23,341 & 2,157 & 1,674 & 2,357 \\
+        & HMM & 22,810 & 5,440 & 2,205 & 2,278 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Performance Metrics Table
+\begin{table}[h!]
+    \centering
+    \small
+    \caption{Performance Metrics for PSI-BLAST and HMM at Protein and Residue Levels}
+    \label{tab:metrics}
+    \begin{tabular}{lcccc}
+        \toprule
+        \multirow{2}{*}{\textbf{Metric}} & \multicolumn{2}{c}{\textbf{Protein Level}} & \multicolumn{2}{c}{\textbf{Residue Level}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & PSI-BLAST & HMM & PSI-BLAST & HMM \\
+        \midrule
+        Precision & 0.9880 & 0.9880 & 0.9154 & 0.8074 \\
+        Recall & 1.0000 & 1.0000 & 0.9331 & 0.9119 \\
+        F-score & 0.9939 & 0.9939 & 0.9242 & 0.8565 \\
+        Bal. Acc. & 0.5000 & 0.5000 & 0.7276 & 0.6035 \\
+        MCC & 0.0000 & 0.0000 & 0.4772 & 0.2556 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
