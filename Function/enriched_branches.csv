@@ -1,21 +1,21 @@
 GO_ID,GO_Term,Branch_Name,Hierarchy_Depth,Number_Enriched_Terms,Total_Significance_Score
 GO:0008150,biological_process,biological_process,0,212,2654.6398913609473
-GO:0009987,cellular process,cellular process,1,83,1685.4447136259744
+GO:0009987,cellular process,biological_process,1,83,1685.4447136259744
 GO:0003674,molecular_function,molecular_function,0,42,1407.354567296794
-GO:0008152,metabolic process,metabolic process,2,58,1161.5233799120365
-GO:0003824,catalytic activity,catalytic activity,1,20,1066.8863771541698
-GO:0016787,hydrolase activity,hydrolase activity,2,17,1006.9046914729897
-GO:0044238,primary metabolic process,primary metabolic process,3,40,993.5088660836265
-GO:0016788,"hydrolase activity, acting on ester bonds","hydrolase activity, acting on ester bonds",3,15,916.1121419055614
-GO:0065007,biological regulation,biological regulation,1,68,529.285518981213
-GO:0050789,regulation of biological process,regulation of biological process,2,64,515.903625028207
-GO:0009056,catabolic process,catabolic process,3,14,486.8782345348021
-GO:0071840,cellular component organization or biogenesis,cellular component organization or biogenesis,2,13,404.8157067855303
+GO:0008152,metabolic process,cellular process,2,58,1161.5233799120365
+GO:0003824,catalytic activity,molecular_function,1,20,1066.8863771541698
+GO:0016787,hydrolase activity,catalytic activity,2,17,1006.9046914729897
+GO:0044238,primary metabolic process,metabolic process,3,40,993.5088660836265
+GO:0016788,"hydrolase activity, acting on ester bonds",hydrolase activity,3,15,916.1121419055614
+GO:0065007,biological regulation,biological_process,1,68,529.285518981213
+GO:0050789,regulation of biological process,biological regulation,2,64,515.903625028207
+GO:0009056,catabolic process,metabolic process,3,14,486.8782345348021
+GO:0071840,cellular component organization or biogenesis,cellular process,2,13,404.8157067855303
 GO:0005575,cellular_component,cellular_component,0,31,404.2604291148037
-GO:0016043,cellular component organization,cellular component organization,3,12,403.073513354174
-GO:0005488,binding,binding,1,20,319.69592819520284
-GO:0032501,multicellular organismal process,multicellular organismal process,1,19,308.2412540624615
-GO:0048518,positive regulation of biological process,positive regulation of biological process,3,31,251.29370568913944
-GO:0050794,regulation of cellular process,regulation of cellular process,3,29,249.3923555923816
-GO:0110165,cellular anatomical entity,cellular anatomical structure,1,23,228.92240226945597
-GO:0051239,regulation of multicellular organismal process,regulation of multicellular organismal process,3,22,195.16804520959596
+GO:0016043,cellular component organization,cellular component organization or biogenesis,3,12,403.073513354174
+GO:0005488,binding,molecular_function,1,20,319.69592819520284
+GO:0032501,multicellular organismal process,biological_process,1,19,308.2412540624615
+GO:0048518,positive regulation of biological process,regulation of biological process,3,31,251.29370568913944
+GO:0050794,regulation of cellular process,regulation of biological process,3,29,249.3923555923816
+GO:0110165,cellular anatomical structure,cellular_component,1,23,228.92240226945597
+GO:0051239,regulation of multicellular organismal process,regulation of biological process,3,22,195.16804520959596
