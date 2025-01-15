@@ -1,0 +1,30 @@
+% !TEX root = template.tex
+
+\section{Model Building}
+
+Given our initial data (Table~\ref{tab:protein_info}) and the representative domain sequence (Fig.~\ref{fig:sequence}), we collected $1000$ homologous sequences by means of a BLAST search~\cite{blast} against the UniProt Knowledgebase (UniProtKB)~\cite{uniprot} with an e-value threshold of $0.0001$. Next, we utilized ClustalOmega~\cite{clustalomega} to generate a multiple sequence alignment. To have a more generalizable and performant model later on, we cleaned the MSA by first removing redundant rows at a $100$\%\ threshold using JalView~\cite{jalview}, resulting in $155$ sequences, and then performing a detailed conservation analysis. In particular, we first removed columns of residues that had $80$\%\ or more gaps, which resulted in roughly removing $85$\%\ of the initial $3,254$ columns. For the PSSM model input, we additionally needed to ... (lorenzo). Given the filtered MSAs, we then proceeded to build both the HMM and PSSM models using HMMER-3.4 and NCBI-BLAST-2.16.0+~\cite{blast}, respectively.
+
+\begin{table}[h]
+    \centering
+    \caption{Protein Domain Information}
+    \label{tab:protein_info}
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Property} & \textbf{Value} \\
+        \midrule
+        UniProt ID & P54315 \\
+        PfamID & PF00151 \\
+        Domain Position & 18-353 \\
+        Organism & Homo sapiens (Human) \\
+        Pfam Name & Lipase/vitellogenin \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \caption{Domain Sequence}
+    \label{fig:sequence}
+    \footnotesize
+    \seqsplit{KEVCYEDLGCFSDTEPWGGTAIRPLKILPWSPEKIGTRFLLYTNENPNNFQILLLSDPSTIEASNFQMDRKTRFIIHGFIDKGDESWVTDMCKKLFEVEEVNCICVDWKKGSQATYTQAANNVRVVGAQVAQMLDILLTEYSYPPSKVHLIGHSLGAHVAGEAGSKTPGLSRITGLDPVEASFESTPEEVRLDPSDADFVDVIHTDAAPLIPFLGFGTNQQMGHLDFFPNGGESMPGCKKNALSQIVDLDGIWAGTRDFVACNHLRSYKYYLESILNPDGFAAYPCTSYKSFESDKCFPCPDQGCPQMGHYADKFAGRTSEEQQKFFLNTGEASNF}
+\end{figure}

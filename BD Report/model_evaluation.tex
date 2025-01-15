@@ -1,0 +1,10 @@
+% !TEX root = template.tex
+
+\section{Model Evaluation}
+
+To generate predictions, we used HMM-SEARCH and PSI-BLAST with default parameters. Both searches were performed against the manually curated SwissProt database (release $29.11.2024$)~\cite{uniprot}, resulting in $83$ predicted proteins with e-values $< 0.05$ and their corresponding domain locations within each protein sequence. Since HMM-SEARCH returned multiple domain hits, we only selected the one with the smallest e-value. To generate the ground truth, we collected all 82 reviewed proteins in SwissProt annotated with the given Pfam domain~\cite{pfam} utilizing the InterPro API~\cite{interpro}. We evaluated both models against the ground truth using two approaches. First, at the protein level, we verified whether predicted proteins matched the annotated ones. Second, at the residue level, for proteins present in both our predictions and the SwissProt reviewed set, we created binary vectors representing domain positions and compared them to quantify the overlap of domain boundary predictions. To assess the performance of the model, we calculated precision, recall, F-score, balanced accuracy and MCC. Results are reported in section VII.
+
+
+
+
+
