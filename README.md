@@ -50,7 +50,7 @@ The aim of the project is to characterize the Lipase/Vitellogenin domain family 
 ### Steps to Reproduce
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BD_Proj.git
+   git clone https://github.com/maloooon/BD_Proj.git
    cd BD_Proj
    ```
 2. Open the Jupyter Notebook:
