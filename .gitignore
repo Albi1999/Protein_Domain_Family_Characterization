@@ -2,3 +2,4 @@ go.obo
 uniprot_sprot.xml
 .DS_Store
 uniprot_sprot.fasta
+Function/goa_uniprot_all.gaf.gz

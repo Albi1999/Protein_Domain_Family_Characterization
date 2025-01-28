@@ -4,42 +4,41 @@ GO:0009987,cellular process,1,153,4059.071362294963
 GO:0008152,metabolic process,2,121,3106.4416437800305
 GO:0044238,primary metabolic process,3,97,2413.941979267247
 GO:0006629,lipid metabolic process,4,96,2391.030023385215
-GO:0003674,molecular_function,0,20,1092.7020151858937
-GO:0003824,catalytic activity,1,19,1088.8201697913123
-GO:0016787,hydrolase activity,2,18,1070.0265826073978
-GO:0016788,"hydrolase activity, acting on ester bonds",3,16,1007.2097535590452
-GO:0052689,carboxylic ester hydrolase activity,4,15,913.037384191341
+GO:0003674,molecular_function,0,20,1092.702015185894
+GO:0003824,catalytic activity,1,19,1088.8201697913125
+GO:0016787,hydrolase activity,2,18,1070.026582607398
+GO:0016788,"hydrolase activity, acting on ester bonds",3,16,1007.2097535590453
 GO:0071840,cellular component organization or biogenesis,2,29,912.2619291479956
 GO:0016043,cellular component organization,3,28,910.2568583685062
 GO:0043933,protein-containing complex organization,4,27,907.9113940197402
-GO:0016298,lipase activity,5,10,841.3963173402931
+GO:0016298,lipase activity,4,10,841.3963173402932
 GO:0046486,glycerolipid metabolic process,5,26,720.9790072750474
 GO:0009056,catabolic process,3,21,672.7412444040483
 GO:0006638,neutral lipid metabolic process,5,15,649.3902021996416
 GO:0071825,protein-lipid complex organization,5,17,583.6447497175111
 GO:0016042,lipid catabolic process,4,13,510.81197942938917
-GO:0004620,phospholipase activity,6,5,429.07497720996315
+GO:0004620,phospholipase activity,5,5,429.0749772099632
 GO:0050896,response to stimulus,1,62,360.8639230603757
 GO:0006639,acylglycerol metabolic process,6,8,358.8172000405506
 GO:0034367,protein-containing complex remodeling,5,9,315.2205162965195
-GO:0032501,multicellular organismal process,1,16,303.95661792499385
+GO:0032501,multicellular organismal process,1,16,303.9566179249938
 GO:0005575,cellular_component,0,20,287.8208496209074
 GO:0110165,cellular anatomical structure,1,19,282.09386731658344
 GO:0034368,protein-lipid complex remodeling,6,8,271.9132955164234
-GO:0071827,plasma lipoprotein particle organization,2,8,268.56465544886265
+GO:0071827,plasma lipoprotein particle organization,2,8,268.5646554488626
 GO:0042221,response to chemical,2,41,256.5534793319015
 GO:0046503,glycerolipid catabolic process,5,5,246.0728652888716
 GO:0046461,neutral lipid catabolic process,6,3,230.59302605858517
-GO:0034369,plasma lipoprotein particle remodeling,3,7,224.85769251418603
-GO:0004806,triacylglycerol lipase activity,6,2,182.1342142193863
+GO:0034369,plasma lipoprotein particle remodeling,3,7,224.857692514186
+GO:0004806,triacylglycerol lipase activity,5,2,182.1342142193863
 GO:0042592,homeostatic process,1,8,161.41185358941576
 GO:0046464,acylglycerol catabolic process,6,2,157.40982913427814
 GO:0048878,chemical homeostasis,2,7,150.35261107543755
-GO:0008970,phospholipase A1 activity,7,1,143.39987282862097
+GO:0008970,phospholipase A1 activity,6,1,143.39987282862097
 GO:0006641,triglyceride metabolic process,7,3,142.1425624211633
 GO:0055088,lipid homeostasis,3,6,137.3196945645753
-GO:0052739,phosphatidylserine 1-acylhydrolase activity,7,1,133.39164091674232
-GO:0034370,triglyceride-rich lipoprotein particle remodeling,4,4,133.23316536954468
+GO:0052739,phosphatidylserine 1-acylhydrolase activity,6,1,133.39164091674232
+GO:0034370,triglyceride-rich lipoprotein particle remodeling,4,4,133.23316536954465
 GO:0005615,extracellular space,2,1,123.96867573705082
 GO:0006644,phospholipid metabolic process,5,13,122.42743297231992
 GO:0016020,membrane,2,12,121.71786399565264
@@ -49,7 +48,8 @@ GO:1901700,response to oxygen-containing compound,3,11,92.81019840796353
 GO:0019433,triglyceride catabolic process,7,1,81.84549147519546
 GO:1903509,liposaccharide metabolic process,4,6,73.36677196131589
 GO:0044419,biological process involved in interspecies interaction between organisms,1,6,73.19292597581503
-GO:0004465,lipoprotein lipase activity,7,1,71.58592197273536
+GO:0052689,carboxylic ester hydrolase activity,4,5,71.64106685104787
+GO:0004465,lipoprotein lipase activity,6,1,71.58592197273536
 GO:0006650,glycerophospholipid metabolic process,6,9,70.1366122663248
 GO:0006664,glycolipid metabolic process,5,5,69.63478429483602
 GO:0012506,vesicle membrane,4,5,65.04199327260623
@@ -81,7 +81,7 @@ GO:0034284,response to monosaccharide,5,3,31.64441991625973
 GO:0042632,cholesterol homeostasis,5,1,31.36189093668203
 GO:0047376,"all-trans-retinyl-palmitate hydrolase, all-trans-retinol forming activity",6,1,31.170008374061805
 GO:0046475,glycerophospholipid catabolic process,6,2,24.01860922278248
-GO:0047714,galactolipase activity,6,1,22.58251542762449
+GO:0047714,galactolipase activity,5,1,22.58251542762449
 GO:0046470,phosphatidylcholine metabolic process,7,2,22.175067405348397
 GO:0070328,triglyceride homeostasis,5,1,21.727497510244678
 GO:0006633,fatty acid biosynthetic process,5,1,21.407818141149328
@@ -95,7 +95,7 @@ GO:0019376,galactolipid catabolic process,6,1,18.28197808555705
 GO:0042589,zymogen granule membrane,6,1,17.887537936178038
 GO:0009725,response to hormone,3,5,17.77999420741688
 GO:0031640,killing of cells of another organism,3,1,16.092506262293174
-GO:0047372,monoacylglycerol lipase activity,6,1,15.759402009886088
+GO:0047372,monoacylglycerol lipase activity,5,1,15.759402009886088
 GO:0071396,cellular response to lipid,4,2,15.387277056232048
 GO:0043207,response to external biotic stimulus,3,3,15.034390118364627
 GO:0042995,cell projection,2,3,13.923635651516099
@@ -110,7 +110,7 @@ GO:0048545,response to steroid hormone,4,3,10.937027604292584
 GO:0009749,response to glucose,7,1,10.935294946903374
 GO:0044258,intestinal lipid catabolic process,5,1,10.881563363337673
 GO:0071398,cellular response to fatty acid,5,1,10.273808409625216
-GO:0004622,lysophospholipase activity,7,1,9.895607477906303
+GO:0004622,lysophospholipase activity,6,1,9.895607477906303
 GO:0120025,plasma membrane bounded cell projection,3,2,9.721189913466391
 GO:0034374,low-density lipoprotein particle remodeling,4,1,9.550069039739254
 GO:0046473,phosphatidic acid metabolic process,7,2,9.29463032834134
@@ -125,7 +125,7 @@ GO:1901698,response to nitrogen compound,3,2,6.849302021532123
 GO:0006658,phosphatidylserine metabolic process,4,2,6.4619959780521015
 GO:0055091,phospholipid homeostasis,4,1,6.107768009962412
 GO:0005576,extracellular region,2,1,5.461315170632289
-GO:0004623,phospholipase A2 activity,7,1,5.254051786526549
+GO:0004623,phospholipase A2 activity,6,1,5.254051786526549
 GO:0043005,neuron projection,4,1,5.088825015144924
 GO:0008203,cholesterol metabolic process,5,1,5.031777774702907
 GO:0045017,glycerolipid biosynthetic process,5,3,4.825975067764761
