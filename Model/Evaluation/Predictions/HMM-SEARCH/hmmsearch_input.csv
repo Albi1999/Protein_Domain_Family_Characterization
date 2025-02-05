@@ -1,0 +1,85 @@
+Target Name	Target Accession	Target Length	Query Name	Query Accession	Query Length	E-value	Score	Bias	Domain Index	Domain Count	Cond. E-value	Domain Ind. E-value	Domain Bit-score	Domain Bias	Query Ali. Start	Query Ali. End	Target Ali. Start	Target Ali. End	Target Env. Start	Target Env. End	Acc	Description	Mapped PDB(s)	Number of Identical Sequences
+P06857	P06857	467	trimmed_alignment_HMM	-	469	9.2e-243	811.1	0.0	1	1	1.9e-246	1.0e-242	810.963073730469	0.03	1	465	1	467	1	467	0.99	Inactive pancreatic lipase-related protein 1		0
+P54316	P54316	473	trimmed_alignment_HMM	-	469	1.9e-241	806.8	0.0	1	1	3.9e-245	2.2e-241	806.603454589844	0.00	1	467	1	469	1	471	0.99	Inactive pancreatic lipase-related protein 1		0
+Q5BKQ4	Q5BKQ4	473	trimmed_alignment_HMM	-	469	3.1e-241	806.1	0.0	1	1	6.4e-245	3.5e-241	805.90234375	0.02	1	467	1	469	1	471	0.99	Inactive pancreatic lipase-related protein 1		0
+P54315	P54315	467	trimmed_alignment_HMM	-	469	7.9e-239	798.2	0.0	1	1	1.6e-242	8.8e-239	797.996887207031	0.00	1	465	1	467	1	467	0.99	Inactive pancreatic lipase-related protein 1		0
+P16233	P16233	465	trimmed_alignment_HMM	-	469	1.0e-237	794.5	0.0	1	1	2.1e-241	1.2e-237	794.310546875	0.00	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+P29183	P29183	461	trimmed_alignment_HMM	-	469	1.3e-236	790.8	0.0	1	1	2.7e-240	1.5e-236	790.662719726562	0.01	5	465	1	461	1	461	0.98	Pancreatic triacylglycerol lipase (Fragment)		0
+P17892	P17892	482	trimmed_alignment_HMM	-	469	5.8e-235	785.4	0.0	1	1	1.2e-238	6.9e-235	785.164672851562	0.02	1	465	15	482	15	482	0.99	Pancreatic lipase-related protein 2		0
+O88354	O88354	465	trimmed_alignment_HMM	-	469	1.7e-233	780.6	0.0	1	1	3.4e-237	1.9e-233	780.422790527344	0.02	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+P00591	P00591	450	trimmed_alignment_HMM	-	469	8.7e-233	778.2	0.0	1	1	1.8e-236	9.7e-233	778.071716308594	0.03	18	465	2	450	1	450	0.98	Pancreatic triacylglycerol lipase		0
+Q64425	Q64425	457	trimmed_alignment_HMM	-	469	1.5e-232	777.4	0.0	1	1	3.1e-236	1.7e-232	777.252685546875	0.02	10	465	2	457	1	457	0.98	Pancreatic triacylglycerol lipase (Fragment)		0
+P27657	P27657	465	trimmed_alignment_HMM	-	469	1.9e-232	777.1	0.1	1	1	3.9e-236	2.2e-232	776.929931640625	0.09	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+P54318	P54318	468	trimmed_alignment_HMM	-	469	9.4e-232	774.8	0.0	1	1	1.9e-235	1.1e-231	774.664733886719	0.01	1	465	1	468	1	468	0.99	Pancreatic lipase-related protein 2		0
+Q6P8U6	Q6P8U6	465	trimmed_alignment_HMM	-	469	1.1e-231	774.6	0.0	1	1	2.2e-235	1.2e-231	774.433227539062	0.01	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+P50903	P50903	465	trimmed_alignment_HMM	-	469	5.4e-231	772.3	0.0	1	1	1.1e-234	6.0e-231	772.160888671875	0.00	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+Q02157	Q02157	465	trimmed_alignment_HMM	-	469	1.9e-227	760.6	0.0	1	1	3.9e-231	2.2e-227	760.445556640625	0.00	1	465	1	465	1	465	0.98	Pancreatic triacylglycerol lipase		0
+Q64424	Q64424	470	trimmed_alignment_HMM	-	469	8.0e-227	758.6	0.0	1	1	1.7e-230	9.6e-227	758.308898925781	0.01	2	465	3	470	2	470	0.99	Pancreatic lipase-related protein 2		0
+P54317	P54317	469	trimmed_alignment_HMM	-	469	1.1e-225	754.8	0.0	1	1	2.2e-229	1.2e-225	754.697448730469	0.00	4	465	4	469	1	469	0.98	Pancreatic lipase-related protein 2		0
+D7EZN2	D7EZN2	471	trimmed_alignment_HMM	-	469	1.9e-223	747.4	0.0	1	1	3.8e-227	2.1e-223	747.283386230469	0.04	3	465	3	471	1	471	0.98	Pancreatic lipase-related protein 2		0
+A5PK46	A5PK46	469	trimmed_alignment_HMM	-	469	4.2e-219	733.1	0.0	1	1	8.5e-223	4.7e-219	732.952758789062	0.00	3	465	3	469	1	469	0.99	Pancreatic lipase-related protein 2		0
+P81139	P81139	434	trimmed_alignment_HMM	-	469	1.5e-209	701.6	0.9	1	1	6.5e-212	3.6e-208	697.070495605469	0.87	17	465	1	434	1	434	0.98	Pancreatic lipase-related protein 2		0
+Q17RR3	Q17RR3	467	trimmed_alignment_HMM	-	469	1.9e-179	602.4	0.0	1	1	3.8e-183	2.1e-179	602.220520019531	0.02	1	465	1	467	1	467	0.96	Pancreatic lipase-related protein 3		0
+P11153	P11153	465	trimmed_alignment_HMM	-	469	1.3e-81	279.7	0.5	1	1	3.1e-85	1.7e-81	279.378143310547	0.51	41	461	17	445	9	453	0.88	Lipoprotein lipase		0
+Q3SZ79	Q3SZ79	500	trimmed_alignment_HMM	-	469	3.6e-79	271.7	0.1	1	1	8.3e-83	4.6e-79	271.384521484375	0.07	42	426	38	428	28	472	0.89	Hepatic triacylglycerol lipase		0
+P11150	P11150	499	trimmed_alignment_HMM	-	469	1.2e-78	270.0	0.0	1	1	2.7e-82	1.5e-78	269.676910400391	0.04	47	425	44	426	21	471	0.88	Hepatic triacylglycerol lipase		0
+Q9Y5X9	Q9Y5X9	500	trimmed_alignment_HMM	-	469	1.2e-78	270.0	0.1	1	1	3.0e-82	1.6e-78	269.568664550781	0.09	48	421	44	418	9	434	0.87	Endothelial lipase		0
+Q06000	Q06000	474	trimmed_alignment_HMM	-	469	1.8e-78	269.4	0.0	1	1	4.3e-82	2.4e-78	269.016693115234	0.04	50	461	36	455	32	462	0.89	Lipoprotein lipase		0
+O46559	O46559	499	trimmed_alignment_HMM	-	469	4.0e-78	268.3	0.0	1	1	9.6e-82	5.3e-78	267.875518798828	0.00	50	424	46	425	30	478	0.90	Hepatic triacylglycerol lipase		0
+P49060	P49060	475	trimmed_alignment_HMM	-	469	5.4e-78	267.8	0.0	1	1	1.3e-81	7.1e-78	267.456573486328	0.02	51	461	37	455	27	462	0.88	Lipoprotein lipase		0
+P27656	P27656	510	trimmed_alignment_HMM	-	469	6.8e-78	267.5	0.0	1	1	1.6e-81	8.7e-78	267.176177978516	0.00	49	424	45	426	28	469	0.90	Hepatic triacylglycerol lipase		0
+P06858	P06858	475	trimmed_alignment_HMM	-	469	7.8e-78	267.3	0.0	1	1	1.8e-81	1.0e-77	266.951141357422	0.01	51	461	37	455	27	462	0.88	Lipoprotein lipase		0
+Q9WVG5	Q9WVG5	500	trimmed_alignment_HMM	-	469	1.6e-77	266.3	0.0	1	1	3.6e-81	2.0e-77	265.984405517578	0.04	55	421	51	418	12	466	0.87	Endothelial lipase		0
+P11602	P11602	490	trimmed_alignment_HMM	-	469	2.2e-77	265.9	0.0	1	1	5.1e-81	2.8e-77	265.480194091797	0.00	49	453	35	447	27	459	0.88	Lipoprotein lipase		0
+Q9BDJ4	Q9BDJ4	452	trimmed_alignment_HMM	-	469	2.5e-77	265.7	0.0	1	1	5.8e-81	3.2e-77	265.317199707031	0.00	49	422	37	400	25	441	0.88	Lipase member H		0
+O46647	O46647	475	trimmed_alignment_HMM	-	469	3.5e-77	265.2	0.0	1	1	8.1e-81	4.4e-77	264.836212158203	0.03	51	461	37	455	33	463	0.88	Lipoprotein lipase		0
+P07867	P07867	494	trimmed_alignment_HMM	-	469	1.2e-76	263.4	0.0	1	1	2.7e-80	1.5e-76	263.115783691406	0.01	49	425	45	427	19	471	0.89	Hepatic triacylglycerol lipase		0
+P11152	P11152	474	trimmed_alignment_HMM	-	469	1.3e-76	263.3	0.0	1	1	3.2e-80	1.8e-76	262.860504150391	0.01	50	461	36	455	28	462	0.88	Lipoprotein lipase		0
+P49923	P49923	478	trimmed_alignment_HMM	-	469	3.3e-76	262.0	0.0	1	1	7.7e-80	4.2e-76	261.60546875	0.03	50	461	39	458	34	466	0.87	Lipoprotein lipase		0
+P55031	P55031	478	trimmed_alignment_HMM	-	469	6.1e-76	261.1	0.0	1	1	1.4e-79	7.9e-76	260.711181640625	0.03	51	461	40	458	35	466	0.88	Lipoprotein lipase		0
+J3RZ81	J3RZ81	497	trimmed_alignment_HMM	-	469	7.6e-76	260.8	0.0	1	1	1.8e-79	9.8e-76	260.405914306641	0.01	43	424	48	431	36	469	0.88	Putative endothelial lipase		0
+Q29524	Q29524	478	trimmed_alignment_HMM	-	469	1.0e-75	260.3	0.0	1	1	2.5e-79	1.4e-75	259.933898925781	0.01	49	460	38	457	23	464	0.88	Lipoprotein lipase		0
+P11151	P11151	478	trimmed_alignment_HMM	-	469	1.1e-75	260.2	0.0	1	1	2.6e-79	1.5e-75	259.838073730469	0.01	50	460	39	457	23	464	0.88	Lipoprotein lipase		0
+Q8WWY8	Q8WWY8	451	trimmed_alignment_HMM	-	469	4.5e-75	258.2	0.0	1	1	1.1e-78	5.9e-75	257.827117919922	0.00	51	420	39	397	23	440	0.89	Lipase member H		0
+Q6PA23	Q6PA23	460	trimmed_alignment_HMM	-	469	5.1e-75	258.1	0.0	1	1	1.2e-78	6.9e-75	257.620788574219	0.01	52	422	46	408	30	436	0.89	Lipase member H-A		0
+Q8VBX1	Q8VBX1	493	trimmed_alignment_HMM	-	469	2.4e-74	255.8	0.0	1	1	5.8e-78	3.2e-74	255.424621582031	0.01	54	421	52	420	16	440	0.88	Endothelial lipase		0
+Q641F6	Q641F6	460	trimmed_alignment_HMM	-	469	1.3e-71	246.8	0.0	1	1	3.2e-75	1.8e-71	246.358139038086	0.01	51	421	45	407	30	439	0.88	Lipase member H-B		0
+Q5XGE9	Q5XGE9	460	trimmed_alignment_HMM	-	469	3.8e-71	245.3	0.0	1	1	9.0e-75	4.9e-71	244.898147583008	0.03	52	420	46	406	22	434	0.88	Lipase member H		0
+Q32PY2	Q32PY2	451	trimmed_alignment_HMM	-	469	3.5e-70	242.1	0.0	1	1	8.5e-74	4.7e-70	241.682083129883	0.00	52	433	40	410	25	443	0.87	Lipase member H		0
+Q8CIV3	Q8CIV3	451	trimmed_alignment_HMM	-	469	7.5e-70	241.0	0.0	1	1	1.8e-73	9.9e-70	240.608123779297	0.00	52	430	40	407	25	444	0.86	Lipase member H		0
+Q6XZB0	Q6XZB0	460	trimmed_alignment_HMM	-	469	3.6e-69	238.8	0.1	1	1	8.8e-73	4.9e-69	238.32991027832	0.05	50	388	40	371	36	424	0.88	Lipase member I		0
+Q6DBU8	Q6DBU8	454	trimmed_alignment_HMM	-	469	4.7e-66	228.5	0.0	1	1	1.2e-69	6.6e-66	227.991668701172	0.02	50	418	42	399	33	412	0.88	Lipase member H		0
+Q6NYZ4	Q6NYZ4	456	trimmed_alignment_HMM	-	469	3.0e-61	212.7	0.0	1	1	6.8e-65	3.8e-61	212.319091796875	0.04	47	375	44	363	13	404	0.86	Phospholipase A1 member A		0
+P97535	P97535	456	trimmed_alignment_HMM	-	469	8.0e-61	211.2	0.0	1	1	2.0e-64	1.1e-60	210.755981445312	0.00	50	386	48	370	37	431	0.89	Phospholipase A1 member A		0
+Q5E9H0	Q5E9H0	456	trimmed_alignment_HMM	-	469	2.0e-58	203.4	0.0	1	1	4.7e-62	2.6e-58	202.955947875977	0.00	48	386	46	370	18	409	0.89	Phospholipase A1 member A		0
+Q8VI78	Q8VI78	456	trimmed_alignment_HMM	-	469	1.8e-57	200.2	0.0	1	1	4.7e-61	2.6e-57	199.671600341797	0.00	50	388	48	372	36	422	0.89	Phospholipase A1 member A		0
+Q53H76	Q53H76	456	trimmed_alignment_HMM	-	469	9.4e-57	197.8	0.0	1	1	2.5e-60	1.4e-56	197.256927490234	0.00	50	422	48	404	33	449	0.87	Phospholipase A1 member A		0
+Q5RBQ5	Q5RBQ5	456	trimmed_alignment_HMM	-	469	1.7e-56	197.0	0.0	1	1	4.6e-60	2.5e-56	196.402496337891	0.00	50	422	48	404	36	443	0.88	Phospholipase A1 member A		0
+C0HLL3	C0HLL3	304	trimmed_alignment_HMM	-	469	4.3e-42	149.5	4.0	1	1	5.2e-45	2.9e-41	146.7587890625	3.95	53	333	13	283	4	301	0.86	Phospholipase A1		0
+P0CH47	P0CH47	337	trimmed_alignment_HMM	-	469	4.5e-41	146.1	3.2	1	1	6.5e-44	3.6e-40	143.143585205078	3.19	54	332	47	315	19	334	0.84	Probable phospholipase A1 magnifin		0
+A2VBC4	A2VBC4	322	trimmed_alignment_HMM	-	469	7.0e-41	145.5	5.1	1	1	3.1e-43	1.7e-39	140.889724731445	5.14	49	332	26	300	13	312	0.85	Phospholipase A1		0
+P53357	P53357	303	trimmed_alignment_HMM	-	469	2.3e-40	143.8	0.6	1	1	3.6e-43	2.0e-39	140.68376159668	0.59	52	333	12	282	5	300	0.85	Phospholipase A1 2		0
+Q9U6W0	Q9U6W0	301	trimmed_alignment_HMM	-	469	2.5e-40	143.7	3.8	1	1	2.1e-42	1.2e-38	138.178375244141	3.76	53	270	12	236	5	287	0.78	Phospholipase A1		0
+Q6Q249	Q6Q249	316	trimmed_alignment_HMM	-	469	2.4e-39	140.4	3.8	1	1	5.7e-41	3.2e-37	133.43733215332	3.79	73	332	49	294	8	309	0.82	Phospholipase A1 4 (Fragment)		0
+Q6Q252	Q6Q252	337	trimmed_alignment_HMM	-	469	4.9e-39	139.4	3.6	1	1	9.3e-41	5.1e-37	132.741851806641	3.58	73	331	70	314	17	329	0.79	Phospholipase A1 1		0
+Q6Q251	Q6Q251	316	trimmed_alignment_HMM	-	469	5.5e-39	139.2	4.0	1	2	4.0e-40	2.2e-36	130.663299560547	0.05	73	256	49	237	8	239	0.81	Phospholipase A1 2 (Fragment)		0
+Q6Q251	Q6Q251	316	trimmed_alignment_HMM	-	469	5.5e-39	139.2	4.0	2	2	0.002	11	9.64445209503174	1.28	277	333	239	295	237	309	0.91	Phospholipase A1 2 (Fragment)		0
+Q6Q250	Q6Q250	316	trimmed_alignment_HMM	-	469	5.6e-39	139.2	3.5	1	1	1.1e-40	6.1e-37	132.485641479492	3.48	73	331	49	293	8	308	0.79	Phospholipase A1 3 (Fragment)		0
+P51528	P51528	300	trimmed_alignment_HMM	-	469	2.9e-38	136.8	4.0	1	1	7.7e-41	4.2e-37	133.018585205078	3.96	78	332	33	278	3	297	0.84	Phospholipase A1		0
+P49369	P49369	336	trimmed_alignment_HMM	-	469	1.8e-37	134.3	5.3	1	1	4.4e-40	2.4e-36	130.514404296875	5.29	76	332	67	314	28	333	0.84	Phospholipase A1		0
+Q06478	Q06478	317	trimmed_alignment_HMM	-	469	3.2e-37	133.4	5.0	1	1	4.8e-40	2.6e-36	130.395645141602	5.02	42	332	19	295	6	311	0.83	Phospholipase A1 1 (Fragment)		0
+Q3ZU95	Q3ZU95	300	trimmed_alignment_HMM	-	469	5.3e-37	132.7	4.6	1	1	1.2e-39	6.6e-36	129.090042114258	4.61	75	332	30	278	2	297	0.84	Phospholipase A1		0
+P0CH87	P0CH87	301	trimmed_alignment_HMM	-	469	7.6e-37	132.2	4.2	1	1	7.6e-40	4.2e-36	129.738998413086	4.17	55	332	13	279	3	297	0.83	Phospholipase A1		0
+P0DPT0	P0DPT0	301	trimmed_alignment_HMM	-	469	1.1e-36	131.7	6.3	1	1	1.1e-39	5.9e-36	129.250213623047	6.25	56	332	14	279	2	298	0.82	Phospholipase A1 VesT1.02		0
+P0CH86	P0CH86	298	trimmed_alignment_HMM	-	469	1.2e-36	131.5	6.0	1	1	1.0e-39	5.5e-36	129.341567993164	5.99	57	332	15	276	3	295	0.84	Phospholipase A1		0
+P0DMB4	P0DMB4	334	trimmed_alignment_HMM	-	469	1.9e-36	130.9	6.4	1	1	1.8e-39	1.0e-35	128.481582641602	6.41	54	332	45	312	19	330	0.82	Phospholipase A1 1		0
+P0DMB5	P0DMB5	334	trimmed_alignment_HMM	-	469	5.7e-36	129.3	6.7	1	1	5.5e-39	3.0e-35	126.907806396484	6.69	54	332	45	312	19	330	0.82	Phospholipase A1 2		0
+A0A0M3KKW3	A0A0M3KKW3	300	trimmed_alignment_HMM	-	469	2.0e-34	124.2	7.3	1	1	3.0e-37	1.7e-33	121.156509399414	7.32	54	332	12	278	3	296	0.82	Phospholipase A1		0
+P02843	P02843	439	trimmed_alignment_HMM	-	469	2.4e-18	71.2	0.7	1	1	2.5e-21	1.4e-17	68.6962814331055	0.67	135	261	220	345	185	393	0.84	Vitellogenin-1		0
+P0DSI2	P0DSI2	379	trimmed_alignment_HMM	-	469	3.0e-18	70.9	0.1	1	1	1.1e-20	6.2e-17	66.5337982177734	0.11	84	319	110	333	82	354	0.83	Phospholipase A1		0
+P27878	P27878	437	trimmed_alignment_HMM	-	469	6.2e-18	69.8	0.2	1	1	2.1e-21	1.2e-17	68.9132308959961	0.20	150	264	234	347	222	376	0.83	Vitellogenin-1		0
+P02844	P02844	442	trimmed_alignment_HMM	-	469	7.9e-17	66.2	1.8	1	1	7.9e-20	4.4e-16	63.7272491455078	1.80	137	265	223	350	216	429	0.84	Vitellogenin-2		0
+P27587	P27587	422	trimmed_alignment_HMM	-	469	1.3e-16	65.5	0.1	1	1	4.3e-20	2.4e-16	64.616340637207	0.07	141	258	215	332	211	369	0.86	Vitellogenin-2		0
+P06607	P06607	420	trimmed_alignment_HMM	-	469	2.6e-16	64.5	1.0	1	1	1.1e-19	6.1e-16	63.2651863098145	1.01	155	263	230	337	211	380	0.81	Vitellogenin-3		0
+Q68KK0	Q68KK0	346	trimmed_alignment_HMM	-	469	2.0e-14	58.2	0.5	1	1	5.1e-18	2.8e-14	57.7561988830566	0.47	86	259	75	254	51	278	0.83	Phospholipase A1		0
+P83629	P83629	25	trimmed_alignment_HMM	-	469	5.5e-06	30.4	0.0	1	1	1.0e-09	5.5e-06	30.4241828918457	0.02	17	41	1	25	1	25	0.95	Pancreatic triacylglycerol lipase (Fragment)		0
