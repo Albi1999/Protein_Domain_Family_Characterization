@@ -68,7 +68,7 @@
 211,GO:0034381,plasma lipoprotein particle clearance,2,172.49,65.95,0.0004432199178856,5
 328,GO:0006950,response to stress,2,168.18,0.45,0.9673978893287642,30
 118,GO:0031667,response to nutrient levels,2,106.44,15.64,1.05557321194767e-09,11
-387,GO:0065009,regulation of molecular function,2,105.11,0.84,0.6997884525307811,10
+390,GO:0065009,regulation of molecular function,2,105.11,0.84,0.6997884525307811,10
 310,GO:0003006,developmental process involved in reproduction,2,82.37,3.01,0.078495568650014,151
 382,GO:0048856,anatomical structure development,2,57.5,1.23,0.4411191679565509,202
 5,GO:0005615,extracellular space,2,52.77,52.77,9.223167247456196e-126,0
@@ -76,7 +76,7 @@
 67,GO:0001906,cell killing,2,29.58,28.05,1.3964337997987692e-16,3
 71,GO:0141060,disruption of anatomical structure in another organism,2,29.58,26.23,3.4832244033836686e-16,4
 246,GO:0043226,organelle,2,26.49,0.41,0.99828571111966,5
-388,GO:0099080,supramolecular complex,2,26.49,1.0,0.633396542443961,7
+389,GO:0099080,supramolecular complex,2,26.49,1.0,0.633396542443961,7
 187,GO:0042995,cell projection,2,24.73,6.03,5.750813812531505e-05,6
 366,GO:0030674,protein-macromolecule adaptor activity,2,22.88,1.28,0.5437219136072767,19
 359,GO:0036094,small molecule binding,2,21.71,0.89,0.8317754118703046,22
@@ -86,7 +86,7 @@
 258,GO:0009791,post-embryonic development,2,10.85,10.85,0.014887556984116,16
 370,GO:0031974,membrane-enclosed lumen,2,7.37,1.23,0.5587437726751305,2
 323,GO:0007623,circadian rhythm,2,6.66,6.66,0.139536568763624,7
-389,GO:0009628,response to abiotic stimulus,2,4.4,0.59,0.8179317581547156,15
+393,GO:0009628,response to abiotic stimulus,2,4.4,0.59,0.8179317581547156,15
 175,GO:0005576,extracellular region,2,3.63,3.63,1.3455364389584616e-05,4
 343,GO:0048589,developmental growth,2,3.62,3.62,0.2417001521874383,21
 385,GO:1902494,catalytic complex,2,1.02,1.02,0.5410984983271115,119
@@ -446,7 +446,7 @@
 38,GO:0071814,protein-lipid complex binding,3,2242.42,507.72,1.7499181697141197e-29,1
 177,GO:0051239,regulation of multicellular organismal process,3,2242.42,5.42,1.6131974304602507e-05,58
 297,GO:0048518,positive regulation of biological process,3,2242.42,1.94,0.0424455933797153,34
-393,GO:1901135,carbohydrate derivative metabolic process,3,1922.07,0.89,0.6843983991368264,33
+387,GO:1901135,carbohydrate derivative metabolic process,3,1922.07,0.89,0.6843983991368264,33
 171,GO:0032879,regulation of localization,3,1441.55,6.77,7.804821587261797e-06,19
 28,GO:0034185,apolipoprotein binding,3,1382.31,1382.31,1.4130648178428157e-43,1
 265,GO:0050793,regulation of developmental process,3,1223.14,2.6,0.0184583199891074,78
@@ -485,7 +485,7 @@
 267,GO:0032094,response to food,3,50.2,50.2,0.0197257021975797,1
 303,GO:0048519,negative regulation of biological process,3,42.05,0.2,0.9944138499668732,41
 325,GO:1901615,organic hydroxy compound metabolic process,3,31.69,1.95,0.1493949653278337,33
-390,GO:0044281,small molecule metabolic process,3,31.69,0.97,0.6022042822487901,19
+388,GO:0044281,small molecule metabolic process,3,31.69,0.97,0.6022042822487901,19
 233,GO:0009725,response to hormone,3,31.53,6.88,0.0028497210064305,19
 260,GO:0014070,response to organic cyclic compound,3,31.53,5.69,0.0161049092640505,123
 63,GO:0141061,disruption of cell in another organism,3,29.58,29.58,6.754554960403066e-17,1
@@ -3466,7 +3466,7 @@
 26,GO:0071825,protein-lipid complex organization,5,6727.26,519.7,5.335767675635711e-44,4
 6,GO:0004806,triacylglycerol lipase activity,5,5255.67,849.07,4.723806163884979e-105,1
 1,GO:0016042,lipid catabolic process,5,4484.84,132.43,4.8797457683975785e-165,11
-53,GO:0055095,lipoprotein particle mediated signaling,5,3669.41,3669.41,4.1313095243317145e-21,2
+52,GO:0055095,lipoprotein particle mediated signaling,5,3669.41,3669.41,4.1313095243317145e-21,2
 3,GO:0004620,phospholipase activity,5,3165.77,300.32,2.0409911464069115e-138,11
 46,GO:0047714,galactolipase activity,5,2770.05,2770.05,2.3945668276909386e-23,0
 123,GO:0010986,positive regulation of lipoprotein particle clearance,5,2242.42,1187.16,2.149273206173426e-09,4
@@ -6003,12 +6003,12 @@
 24,GO:0071827,plasma lipoprotein particle organization,6,6727.26,555.46,1.538230921804584e-44,3
 9,GO:0004465,lipoprotein lipase activity,6,5255.67,5255.67,1.1350560580515759e-91,0
 143,GO:0044258,intestinal lipid catabolic process,6,4484.84,4484.84,6.547496813901584e-08,0
-52,GO:0055096,low-density lipoprotein particle mediated signaling,6,3669.41,3669.41,4.1313095243317145e-21,0
+53,GO:0055096,low-density lipoprotein particle mediated signaling,6,3669.41,3669.41,4.1313095243317145e-21,0
 4,GO:0052739,phosphatidylserine 1-acylhydrolase activity,6,3165.77,3165.77,2.1027324484168365e-134,0
 2,GO:0008970,phospholipase A1 activity,6,2346.72,2346.72,1.8234648000716332e-144,0
 111,GO:0010983,positive regulation of high-density lipoprotein particle clearance,6,2242.42,2242.42,2.657266872392018e-10,0
 41,GO:0047376,"all-trans-retinyl-palmitate hydrolase, all-trans-retinol forming activity",6,2087.77,2087.77,2.2463967838429235e-28,0
-90,GO:0046466,membrane lipid catabolic process,6,1922.07,185.15,1.2136658440151365e-12,2
+91,GO:0046466,membrane lipid catabolic process,6,1922.07,185.15,1.2136658440151365e-12,2
 193,GO:0006664,glycolipid metabolic process,6,1922.07,8.42,8.525627491924759e-05,12
 13,GO:0046461,neutral lipid catabolic process,6,1774.22,901.98,1.1867744119890836e-64,1
 15,GO:0046503,glycerolipid catabolic process,6,1774.22,448.48,5.126238841254421e-57,2
@@ -6025,7 +6025,7 @@
 84,GO:0030301,cholesterol transport,6,368.62,136.5,1.2855989706431677e-13,5
 363,GO:0051246,regulation of protein metabolic process,6,360.39,1.43,0.3506171889293436,16
 48,GO:0034361,very-low-density lipoprotein particle,6,225.61,225.61,3.739670520313943e-23,0
-91,GO:0045600,positive regulation of fat cell differentiation,6,185.15,185.15,1.2136658440151365e-12,1
+90,GO:0045600,positive regulation of fat cell differentiation,6,185.15,185.15,1.2136658440151365e-12,1
 106,GO:0004622,lysophospholipase activity,6,177.97,177.97,1.1954452972270628e-10,0
 176,GO:0032371,regulation of sterol transport,6,134.55,66.83,1.3932945935359878e-05,5
 178,GO:0032370,positive regulation of lipid transport,6,134.55,61.34,1.797663810759921e-05,12
@@ -6043,7 +6043,7 @@
 190,GO:0016125,sterol metabolic process,6,31.69,18.48,7.176118602637506e-05,6
 199,GO:0051384,response to glucocorticoid,6,31.53,31.53,0.0001285655904927,6
 340,GO:0036464,cytoplasmic ribonucleoprotein granule,6,26.49,3.9,0.2265081905373711,11
-294,GO:0046460,neutral lipid biosynthetic process,6,24.03,21.36,0.0457611331206001,1
+295,GO:0046460,neutral lipid biosynthetic process,6,24.03,21.36,0.0457611331206001,1
 62,GO:0005509,calcium ion binding,6,21.71,21.71,4.24074508363184e-17,1
 280,GO:0031410,cytoplasmic vesicle,6,21.07,3.28,0.0342331809563387,26
 274,GO:0019752,carboxylic acid metabolic process,6,17.18,1.76,0.0139601698084287,48
@@ -8640,7 +8640,7 @@
 135,GO:0050729,positive regulation of inflammatory response,7,65.82,65.82,1.7207056936724066e-08,9
 172,GO:0008203,cholesterol metabolic process,7,31.69,31.69,8.857306542446288e-06,3
 286,GO:0043186,P granule,7,26.49,26.49,0.0370639908835999,2
-295,GO:0046463,acylglycerol biosynthetic process,7,24.03,21.36,0.0457611331206001,3
+294,GO:0046463,acylglycerol biosynthetic process,7,24.03,21.36,0.0457611331206001,3
 225,GO:0005768,endosome,7,21.07,7.43,0.0021565002665783,8
 144,GO:0032787,monocarboxylic acid metabolic process,7,17.18,4.8,6.834308358867055e-08,69
 224,GO:0046394,carboxylic acid biosynthetic process,7,17.18,2.37,0.0020777303739453,39
