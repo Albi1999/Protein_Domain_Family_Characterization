@@ -51,7 +51,7 @@ The aim of the project is to characterize the Lipase/Vitellogenin domain family 
 1. Clone the repository:
    ```bash
    git clone https://github.com/maloooon/Protein_Domain_Family_Characterization.git
-   cd BD_Proj
+   cd Protein_Domain_Family_Characterization
    ```
 2. Open the Jupyter Notebook:
    ```bash
