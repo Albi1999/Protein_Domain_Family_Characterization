@@ -14,6 +14,8 @@
   <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?logo=Jupyter&logoColor=white&style=for-the-badge" height="25"/>
   <img alt="Overleaf" src="https://img.shields.io/badge/Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white&logoSize=auto" height="25"/>
   <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&logoSize=auto" height="25"/>
+  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&logoSize=auto" height="25"/>
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&logoSize=auto" height="25"/>
 <p>
 
 This repository contains the code, models, data, and documentation for the project *"Functional and Structural Characterization of a Protein Domain Family"*. The focus of the project is the Lipase/Vitellogenin domain family (Pfam ID: PF00151), specifically in Homo sapiens. The analysis integrates model building, functional characterization, and motif identification.
